@@ -40,7 +40,7 @@ export default function BoroughInfo({ info }) {
           * "rotate-90" is applied when open, "rotate-0" when closed.
           * "transition-transform" animates the rotation smoothly.
           */}
-        <span className={`transition-transform duration-200 ${isOpen ? 'rotate-90' : 'rotate-0'}`}>
+        <span className={`opacity-15 transition-transform duration-200 ${isOpen ? 'rotate-90' : 'rotate-0'}`}>
           ▶
         </span>
         Borough info

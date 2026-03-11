@@ -62,7 +62,7 @@ export default function CompletedItem({ step }) {
             </span>
           )}
           {/* Expand/collapse chevron */}
-          <span className={`text-xs transition-transform duration-200 ${expanded ? 'rotate-90' : 'rotate-0'}`}>
+          <span className={`text-xs opacity-15 transition-transform duration-200 ${expanded ? 'rotate-90' : 'rotate-0'}`}>
             ▶
           </span>
         </div>
