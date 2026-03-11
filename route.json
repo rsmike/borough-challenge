@@ -12,24 +12,68 @@
     "notes": "Each step's estimated_minutes includes travel from the previous stop, average wait time, and time to find/photograph a street sign. Meal breaks are included where marked."
   },
   "tips": [
-    { "category": "critical", "title": "Check TfL status", "text": "Night before AND morning of. Victoria line is the single biggest point of failure on this route. Have a Plan B for the Haringey/Enfield section." },
-    { "category": "critical", "title": "Meridian Water timetable", "text": "Trains every 30 mins. Check the exact weekday timetable beforehand. Missing one train costs you 25-30 mins of dead time." },
-    { "category": "critical", "title": "Hammersmith Bridge", "text": "Check it is open to pedestrians before the day. It has had repeated closures. If shut, take District line to Richmond station instead (longer out-and-back, adds ~15 min)." },
-    { "category": "planning", "title": "Payment", "text": "Contactless or Oyster works on everything including the New Malden train. Daily cap will apply. No need for paper tickets." },
-    { "category": "planning", "title": "Phone battery", "text": "You will be using GPS navigation and taking 33+ photos over 10 hours. Bring a battery pack. Non-negotiable." },
-    { "category": "planning", "title": "Backup navigation", "text": "Citymapper or TfL Go as secondary planner. If a line goes down mid-route, you need to improvise quickly." },
-    { "category": "info", "title": "Street signs", "text": "Most London street name plates show the borough name underneath. Usually found within 1-2 minutes walk of any station exit. City of London has distinctive signs with the dragon crest." },
-    { "category": "info", "title": "Multi-borough stations", "text": "Chadwell Heath (Redbridge + Barking and Dagenham), Brondesbury (Brent + Camden), Acton Town (Ealing + Hounslow). Two signs per stop - budget extra time." },
-    { "category": "info", "title": "Shoes and comfort", "text": "7-8 miles of walking total, lots of stairs. Wear proper shoes. Dress in layers - you will be alternating between heated trains and cold streets." }
+    {
+      "category": "critical",
+      "title": "Check TfL status",
+      "text": "Night before AND morning of. Victoria line is the single biggest point of failure on this route. Have a Plan B for the Haringey/Enfield section."
+    },
+    {
+      "category": "critical",
+      "title": "Meridian Water timetable",
+      "text": "Trains every 30 mins. Check the exact weekday timetable beforehand. Missing one train costs you 25-30 mins of dead time."
+    },
+    {
+      "category": "critical",
+      "title": "Hammersmith Bridge",
+      "text": "Check it is open to pedestrians before the day. It has had repeated closures. If shut, take District line to Richmond station instead (longer out-and-back, adds ~15 min)."
+    },
+    {
+      "category": "planning",
+      "title": "Payment",
+      "text": "Contactless or Oyster works on everything including the New Malden train. Daily cap will apply. No need for paper tickets."
+    },
+    {
+      "category": "planning",
+      "title": "Phone battery",
+      "text": "You will be using GPS navigation and taking 33+ photos over 10 hours. Bring a battery pack. Non-negotiable."
+    },
+    {
+      "category": "planning",
+      "title": "Backup navigation",
+      "text": "Citymapper or TfL Go as secondary planner. If a line goes down mid-route, you need to improvise quickly."
+    },
+    {
+      "category": "info",
+      "title": "Street signs",
+      "text": "Most London street name plates show the borough name underneath. Usually found within 1-2 minutes walk of any station exit. City of London has distinctive signs with the dragon crest."
+    },
+    {
+      "category": "info",
+      "title": "Multi-borough stations",
+      "text": "Chadwell Heath (Redbridge + Barking and Dagenham), Brondesbury (Brent + Camden), Acton Town (Ealing + Hounslow). Two signs per stop - budget extra time."
+    },
+    {
+      "category": "info",
+      "title": "Shoes and comfort",
+      "text": "7-8 miles of walking total, lots of stairs. Wear proper shoes. Dress in layers - you will be alternating between heated trains and cold streets."
+    }
   ],
   "steps": [
     {
       "order": 1,
       "borough": "Greenwich",
       "station": "Home area",
-      "coordinates": { "lat": 51.4834, "lng": -0.0098 },
+      "coordinates": {
+        "lat": 51.4834,
+        "lng": -0.0098
+      },
       "estimated_minutes": 10,
-      "transport": { "mode": "start", "line": null, "direction": null },
+      "transport": {
+        "mode": "start",
+        "line": null,
+        "direction": null,
+        "from_station": null
+      },
       "directions": "Start at home. Find and photograph a Greenwich borough street sign before you leave. Head to your nearest DLR station.",
       "sign_tip": "Residential streets near you will have Greenwich signs. Get this one done before the day properly begins.",
       "meal": "breakfast",
@@ -49,9 +93,17 @@
       "order": 2,
       "borough": "Tower Hamlets",
       "station": "Canary Wharf",
-      "coordinates": { "lat": 51.5054, "lng": -0.0235 },
+      "coordinates": {
+        "lat": 51.5054,
+        "lng": -0.0235
+      },
       "estimated_minutes": 25,
-      "transport": { "mode": "dlr", "line": "DLR", "direction": "Northbound towards Bank/Tower Gateway" },
+      "transport": {
+        "mode": "dlr",
+        "line": "DLR",
+        "direction": "Northbound towards Bank/Tower Gateway",
+        "from_station": "Cutty Sark / Greenwich DLR"
+      },
       "directions": "Take the DLR from your nearest station (Cutty Sark, Greenwich, or Deptford Bridge) to Canary Wharf. Exit at Canary Wharf DLR. Find the sign BEFORE entering the Elizabeth line station.",
       "sign_tip": "Street signs on Westferry Road or around the shopping centre exits. Do not go into the Elizabeth line yet - find the sign first.",
       "meal": null,
@@ -71,9 +123,17 @@
       "order": 3,
       "borough": "Havering",
       "station": "Romford",
-      "coordinates": { "lat": 51.5753, "lng": 0.1827 },
+      "coordinates": {
+        "lat": 51.5753,
+        "lng": 0.1827
+      },
       "estimated_minutes": 35,
-      "transport": { "mode": "tube", "line": "Elizabeth line", "direction": "Eastbound to Shenfield" },
+      "transport": {
+        "mode": "tube",
+        "line": "Elizabeth line",
+        "direction": "Eastbound to Shenfield",
+        "from_station": "Canary Wharf"
+      },
       "directions": "Enter Canary Wharf Elizabeth line station. Take eastbound train towards Shenfield (NOT Abbey Wood - different branch). Ride to Romford.",
       "sign_tip": "Signs on South Street right outside the station.",
       "meal": null,
@@ -93,9 +153,17 @@
       "order": 4,
       "borough": "Redbridge",
       "station": "Chadwell Heath",
-      "coordinates": { "lat": 51.5684, "lng": 0.1312 },
+      "coordinates": {
+        "lat": 51.5684,
+        "lng": 0.1312
+      },
       "estimated_minutes": 12,
-      "transport": { "mode": "tube", "line": "Elizabeth line", "direction": "Westbound" },
+      "transport": {
+        "mode": "tube",
+        "line": "Elizabeth line",
+        "direction": "Westbound",
+        "from_station": "Romford"
+      },
       "directions": "Elizabeth line westbound from Romford. Alight at Chadwell Heath. The ticket hall is in Redbridge. Find your Redbridge sign, then step outside for Barking and Dagenham.",
       "sign_tip": "Look for Redbridge signs near the station entrance or on the streets to the north. B&D signs are on the streets to the south.",
       "meal": null,
@@ -115,9 +183,17 @@
       "order": 5,
       "borough": "Barking & Dagenham",
       "station": "Chadwell Heath (outside)",
-      "coordinates": { "lat": 51.5681, "lng": 0.1305 },
+      "coordinates": {
+        "lat": 51.5681,
+        "lng": 0.1305
+      },
       "estimated_minutes": 5,
-      "transport": { "mode": "walk", "line": null, "direction": null },
+      "transport": {
+        "mode": "walk",
+        "line": null,
+        "direction": null,
+        "from_station": null
+      },
       "directions": "Walk outside Chadwell Heath station to the south side. The pavement is in Barking and Dagenham. Two boroughs from one station.",
       "sign_tip": "Look on the residential streets immediately south of the station for a B&D street plate.",
       "meal": null,
@@ -137,9 +213,17 @@
       "order": 6,
       "borough": "Newham",
       "station": "Forest Gate",
-      "coordinates": { "lat": 51.5490, "lng": 0.0247 },
+      "coordinates": {
+        "lat": 51.549,
+        "lng": 0.0247
+      },
       "estimated_minutes": 20,
-      "transport": { "mode": "tube", "line": "Elizabeth line", "direction": "Westbound" },
+      "transport": {
+        "mode": "tube",
+        "line": "Elizabeth line",
+        "direction": "Westbound",
+        "from_station": "Chadwell Heath"
+      },
       "directions": "Back into Chadwell Heath station, continue westbound on Elizabeth line to Forest Gate.",
       "sign_tip": "Woodgrange Road outside the station should have Newham signs.",
       "meal": null,
@@ -159,9 +243,17 @@
       "order": 7,
       "borough": "Waltham Forest",
       "station": "Blackhorse Road",
-      "coordinates": { "lat": 51.5867, "lng": -0.0413 },
+      "coordinates": {
+        "lat": 51.5867,
+        "lng": -0.0413
+      },
       "estimated_minutes": 25,
-      "transport": { "mode": "overground", "line": "Overground / Victoria line", "direction": "Northbound" },
+      "transport": {
+        "mode": "overground",
+        "line": "Overground / Victoria line",
+        "direction": "Northbound",
+        "from_station": "Forest Gate"
+      },
       "directions": "From Forest Gate, get to Blackhorse Road. Best options: Elizabeth line to Stratford then Overground northbound, or Elizabeth line to Liverpool Street then Victoria line. Check which is faster on the day. CHECK VICTORIA LINE STATUS HERE.",
       "sign_tip": "Signs on Blackhorse Lane outside the station.",
       "meal": null,
@@ -181,9 +273,17 @@
       "order": 8,
       "borough": "Haringey",
       "station": "Tottenham Hale",
-      "coordinates": { "lat": 51.5882, "lng": -0.0602 },
+      "coordinates": {
+        "lat": 51.5882,
+        "lng": -0.0602
+      },
       "estimated_minutes": 12,
-      "transport": { "mode": "tube", "line": "Victoria line", "direction": "Northbound (one stop)" },
+      "transport": {
+        "mode": "tube",
+        "line": "Victoria line",
+        "direction": "Northbound (one stop)",
+        "from_station": "Blackhorse Road"
+      },
       "directions": "Victoria line northbound one stop from Blackhorse Road. The interchange at Tottenham Hale forces you out through a gateline onto the street.",
       "sign_tip": "Signs on the Hale Village side or along the High Road.",
       "meal": null,
@@ -203,9 +303,17 @@
       "order": 9,
       "borough": "Enfield",
       "station": "Meridian Water",
-      "coordinates": { "lat": 51.6065, "lng": -0.0493 },
+      "coordinates": {
+        "lat": 51.6065,
+        "lng": -0.0493
+      },
       "estimated_minutes": 25,
-      "transport": { "mode": "national_rail", "line": "Greater Anglia", "direction": "Northbound" },
+      "transport": {
+        "mode": "national_rail",
+        "line": "Greater Anglia",
+        "direction": "Northbound",
+        "from_station": "Tottenham Hale"
+      },
       "directions": "National Rail from Tottenham Hale to Meridian Water. CRITICAL: trains run every 30 minutes. Know your exact train time before leaving Blackhorse Road. This is the number one timetable risk of the day.",
       "sign_tip": "New station surrounded by construction. Signs may be sparse - try Leeside Road or Argon Road. Do not wander far.",
       "meal": null,
@@ -225,9 +333,17 @@
       "order": 10,
       "borough": "Islington",
       "station": "Finsbury Park",
-      "coordinates": { "lat": 51.5642, "lng": -0.1065 },
+      "coordinates": {
+        "lat": 51.5642,
+        "lng": -0.1065
+      },
       "estimated_minutes": 22,
-      "transport": { "mode": "tube", "line": "Victoria line", "direction": "Southbound" },
+      "transport": {
+        "mode": "tube",
+        "line": "Victoria line",
+        "direction": "Southbound",
+        "from_station": "Tottenham Hale"
+      },
       "directions": "Train back to Tottenham Hale, then Victoria line southbound to Finsbury Park. Station is in Islington.",
       "sign_tip": "Signs on Seven Sisters Road or Wells Terrace outside the station.",
       "meal": null,
@@ -247,9 +363,17 @@
       "order": 11,
       "borough": "Hackney",
       "station": "Near Finsbury Park",
-      "coordinates": { "lat": 51.5652, "lng": -0.1035 },
+      "coordinates": {
+        "lat": 51.5652,
+        "lng": -0.1035
+      },
       "estimated_minutes": 10,
-      "transport": { "mode": "walk", "line": null, "direction": "East along Seven Sisters Road" },
+      "transport": {
+        "mode": "walk",
+        "line": null,
+        "direction": "East along Seven Sisters Road",
+        "from_station": null
+      },
       "directions": "Walk east from Finsbury Park station along Seven Sisters Road. The Hackney boundary is roughly 200m east. Watch for street signs to change from Islington to Hackney.",
       "sign_tip": "The sign changeover is your proof. Watch for the borough name to switch on the street plates.",
       "meal": null,
@@ -269,9 +393,17 @@
       "order": 12,
       "borough": "Brent",
       "station": "Brondesbury",
-      "coordinates": { "lat": 51.5452, "lng": -0.2028 },
+      "coordinates": {
+        "lat": 51.5452,
+        "lng": -0.2028
+      },
       "estimated_minutes": 30,
-      "transport": { "mode": "overground", "line": "Overground (Mildmay line)", "direction": "Westbound from Highbury & Islington" },
+      "transport": {
+        "mode": "overground",
+        "line": "Overground (Mildmay line)",
+        "direction": "Westbound from Highbury & Islington",
+        "from_station": "Highbury & Islington"
+      },
       "directions": "Walk back to Finsbury Park. Victoria line one stop south to Highbury & Islington. Change to Overground westbound. Allow up to 9 min wait. Alight at Brondesbury.",
       "sign_tip": "Look for Brent signs on Salisbury Road near the station. Then cross the road south for Camden.",
       "meal": null,
@@ -291,9 +423,17 @@
       "order": 13,
       "borough": "Camden",
       "station": "Brondesbury (south side of road)",
-      "coordinates": { "lat": 51.5445, "lng": -0.2028 },
+      "coordinates": {
+        "lat": 51.5445,
+        "lng": -0.2028
+      },
       "estimated_minutes": 5,
-      "transport": { "mode": "walk", "line": null, "direction": "Cross to south side of road" },
+      "transport": {
+        "mode": "walk",
+        "line": null,
+        "direction": "Cross to south side of road",
+        "from_station": null
+      },
       "directions": "Cross to the south side of the road outside Brondesbury station. You are now in Camden. Find the sign, then catch a 189 bus northbound to Cricklewood.",
       "sign_tip": "Look for Camden signs on the south side of Kilburn High Road.",
       "meal": null,
@@ -313,9 +453,17 @@
       "order": 14,
       "borough": "Barnet",
       "station": "Cricklewood",
-      "coordinates": { "lat": 51.5576, "lng": -0.2126 },
+      "coordinates": {
+        "lat": 51.5576,
+        "lng": -0.2126
+      },
       "estimated_minutes": 15,
-      "transport": { "mode": "bus", "line": "189", "direction": "Northbound to Cricklewood" },
+      "transport": {
+        "mode": "bus",
+        "line": "189",
+        "direction": "Northbound to Cricklewood",
+        "from_station": "Brondesbury"
+      },
       "directions": "189 bus from Brondesbury to Cricklewood. Watch for diversions - the original DG attempt hit a diverted bus here. If disrupted, walk to Kilburn and take Jubilee line to Willesden Green, then walk.",
       "sign_tip": "Cricklewood Broadway should have Barnet signs.",
       "meal": null,
@@ -335,9 +483,17 @@
       "order": 15,
       "borough": "Harrow",
       "station": "Harrow-on-the-Hill",
-      "coordinates": { "lat": 51.5793, "lng": -0.3372 },
+      "coordinates": {
+        "lat": 51.5793,
+        "lng": -0.3372
+      },
       "estimated_minutes": 30,
-      "transport": { "mode": "tube", "line": "Metropolitan line", "direction": "Northwestbound" },
+      "transport": {
+        "mode": "tube",
+        "line": "Metropolitan line",
+        "direction": "Northwestbound",
+        "from_station": "Willesden Green / Kilburn"
+      },
       "directions": "Get to Willesden Green or Kilburn (Jubilee line or bus). Take Metropolitan line northwestbound to Harrow-on-the-Hill. Switch here from Watford-direction to Uxbridge-direction.",
       "sign_tip": "Signs on College Road outside the station.",
       "meal": null,
@@ -357,9 +513,17 @@
       "order": 16,
       "borough": "Hillingdon",
       "station": "Eastcote",
-      "coordinates": { "lat": 51.5764, "lng": -0.3972 },
+      "coordinates": {
+        "lat": 51.5764,
+        "lng": -0.3972
+      },
       "estimated_minutes": 18,
-      "transport": { "mode": "tube", "line": "Metropolitan/Piccadilly line", "direction": "Westbound towards Uxbridge" },
+      "transport": {
+        "mode": "tube",
+        "line": "Metropolitan/Piccadilly line",
+        "direction": "Westbound towards Uxbridge",
+        "from_station": "Harrow-on-the-Hill"
+      },
       "directions": "Metropolitan or Piccadilly line westbound to Eastcote. Deepest into west London. For the return: if you just miss a Piccadilly at Eastcote, walk to Rayners Lane (10 min) for better frequency.",
       "sign_tip": "Signs on Field End Road outside the station.",
       "meal": null,
@@ -379,9 +543,17 @@
       "order": 17,
       "borough": "Ealing",
       "station": "Acton Town",
-      "coordinates": { "lat": 51.5028, "lng": -0.2801 },
+      "coordinates": {
+        "lat": 51.5028,
+        "lng": -0.2801
+      },
       "estimated_minutes": 28,
-      "transport": { "mode": "tube", "line": "Piccadilly line", "direction": "Eastbound/southbound" },
+      "transport": {
+        "mode": "tube",
+        "line": "Piccadilly line",
+        "direction": "Eastbound/southbound",
+        "from_station": "Eastcote / Rayners Lane"
+      },
       "directions": "Piccadilly line from Eastcote/Rayners Lane to Acton Town. Step outside - you are in Ealing. Hounslow is round the corner.",
       "sign_tip": "Signs on Gunnersbury Lane. Then walk south/west for Hounslow boundary.",
       "meal": null,
@@ -401,9 +573,17 @@
       "order": 18,
       "borough": "Hounslow",
       "station": "Acton Town (round corner)",
-      "coordinates": { "lat": 51.5022, "lng": -0.2812 },
+      "coordinates": {
+        "lat": 51.5022,
+        "lng": -0.2812
+      },
       "estimated_minutes": 8,
-      "transport": { "mode": "walk", "line": null, "direction": "South/west of station" },
+      "transport": {
+        "mode": "walk",
+        "line": null,
+        "direction": "South/west of station",
+        "from_station": null
+      },
       "directions": "Walk south/west from Acton Town station. The Hounslow borough boundary is right by the station. Look for the changeover on street signs.",
       "sign_tip": "Might take a few minutes to find the exact boundary. Look for sign changeover from Ealing to Hounslow.",
       "meal": null,
@@ -423,9 +603,17 @@
       "order": 19,
       "borough": "Hammersmith & Fulham",
       "station": "Hammersmith",
-      "coordinates": { "lat": 51.4924, "lng": -0.2226 },
+      "coordinates": {
+        "lat": 51.4924,
+        "lng": -0.2226
+      },
       "estimated_minutes": 15,
-      "transport": { "mode": "tube", "line": "Piccadilly/District line", "direction": "Eastbound" },
+      "transport": {
+        "mode": "tube",
+        "line": "Piccadilly/District line",
+        "direction": "Eastbound",
+        "from_station": "Acton Town"
+      },
       "directions": "Piccadilly or District line from Acton Town to Hammersmith. HALFWAY POINT - 19 of 33 done. Walk south to Hammersmith Bridge for Richmond.",
       "sign_tip": "Signs on King Street or Beadon Road outside the station.",
       "meal": null,
@@ -445,9 +633,17 @@
       "order": 20,
       "borough": "Richmond upon Thames",
       "station": "Hammersmith Bridge (south side)",
-      "coordinates": { "lat": 51.4878, "lng": -0.2274 },
+      "coordinates": {
+        "lat": 51.4878,
+        "lng": -0.2274
+      },
       "estimated_minutes": 22,
-      "transport": { "mode": "walk", "line": null, "direction": "South across Hammersmith Bridge, then back" },
+      "transport": {
+        "mode": "walk",
+        "line": null,
+        "direction": "South across Hammersmith Bridge, then back",
+        "from_station": null
+      },
       "directions": "Walk south from Hammersmith to Hammersmith Bridge (~5 min). Cross on foot. South side is Richmond borough. Walk back. ~18 min round trip. CHECK BRIDGE IS OPEN TO PEDESTRIANS BEFORE THE DAY. Fallback: District line to Richmond station (adds ~15 min).",
       "sign_tip": "Find a sign on Castelnau, the road on the south bank.",
       "meal": null,
@@ -467,9 +663,17 @@
       "order": 21,
       "borough": "Kensington & Chelsea",
       "station": "Earl's Court",
-      "coordinates": { "lat": 51.4914, "lng": -0.1935 },
+      "coordinates": {
+        "lat": 51.4914,
+        "lng": -0.1935
+      },
       "estimated_minutes": 20,
-      "transport": { "mode": "tube", "line": "District line", "direction": "Eastbound" },
+      "transport": {
+        "mode": "tube",
+        "line": "District line",
+        "direction": "Eastbound",
+        "from_station": "Hammersmith"
+      },
       "directions": "Back to Hammersmith, District line eastbound to Earl's Court. Walk out onto the street. Re-enter and get a Wimbledon-bound District line train.",
       "sign_tip": "Royal Borough of Kensington and Chelsea signs on Earl's Court Road.",
       "meal": null,
@@ -489,9 +693,17 @@
       "order": 22,
       "borough": "Wandsworth",
       "station": "Southfields",
-      "coordinates": { "lat": 51.4454, "lng": -0.2066 },
+      "coordinates": {
+        "lat": 51.4454,
+        "lng": -0.2066
+      },
       "estimated_minutes": 15,
-      "transport": { "mode": "tube", "line": "District line", "direction": "Wimbledon branch southbound" },
+      "transport": {
+        "mode": "tube",
+        "line": "District line",
+        "direction": "Wimbledon branch southbound",
+        "from_station": "Earl's Court"
+      },
       "directions": "District line Wimbledon branch from Earl's Court. Alight at Southfields. Quick nip out.",
       "sign_tip": "Signs on Wimbledon Park Road.",
       "meal": null,
@@ -511,9 +723,17 @@
       "order": 23,
       "borough": "Merton",
       "station": "Wimbledon",
-      "coordinates": { "lat": 51.4214, "lng": -0.2064 },
+      "coordinates": {
+        "lat": 51.4214,
+        "lng": -0.2064
+      },
       "estimated_minutes": 25,
-      "transport": { "mode": "tube", "line": "District line", "direction": "Terminus" },
+      "transport": {
+        "mode": "tube",
+        "line": "District line",
+        "direction": "Terminus",
+        "from_station": "Earl's Court"
+      },
       "directions": "Continue on District line to Wimbledon terminus. LUNCH STOP - 15 minutes for food.",
       "sign_tip": "Signs everywhere on The Broadway and Wimbledon Hill Road.",
       "meal": "lunch",
@@ -533,9 +753,17 @@
       "order": 24,
       "borough": "Kingston upon Thames",
       "station": "New Malden",
-      "coordinates": { "lat": 51.4033, "lng": -0.2553 },
+      "coordinates": {
+        "lat": 51.4033,
+        "lng": -0.2553
+      },
       "estimated_minutes": 22,
-      "transport": { "mode": "national_rail", "line": "South Western Railway", "direction": "Southwestbound (Hampton Court direction)" },
+      "transport": {
+        "mode": "national_rail",
+        "line": "South Western Railway",
+        "direction": "Southwestbound (Hampton Court direction)",
+        "from_station": "Wimbledon"
+      },
       "directions": "National Rail from Wimbledon. Take a Hampton Court-direction train to New Malden. Out-and-back - return to Wimbledon for the tram.",
       "sign_tip": "Royal Borough of Kingston upon Thames signs on New Malden High Street, right outside the station.",
       "meal": null,
@@ -555,9 +783,17 @@
       "order": 25,
       "borough": "Sutton",
       "station": "Beddington Lane (tram stop)",
-      "coordinates": { "lat": 51.3715, "lng": -0.1493 },
+      "coordinates": {
+        "lat": 51.3715,
+        "lng": -0.1493
+      },
       "estimated_minutes": 30,
-      "transport": { "mode": "tram", "line": "Croydon Tramlink", "direction": "Eastbound from Wimbledon" },
+      "transport": {
+        "mode": "tram",
+        "line": "Croydon Tramlink",
+        "direction": "Eastbound from Wimbledon",
+        "from_station": "Wimbledon"
+      },
       "directions": "Train back to Wimbledon. Pick up the tram (Tramlink) eastbound. Alight at Beddington Lane - first stop in Sutton. Therapia Lane also works.",
       "sign_tip": "Industrial area - signs might take a moment. Look on Beddington Lane itself.",
       "meal": null,
@@ -577,9 +813,17 @@
       "order": 26,
       "borough": "Croydon",
       "station": "West Croydon",
-      "coordinates": { "lat": 51.3782, "lng": -0.1024 },
+      "coordinates": {
+        "lat": 51.3782,
+        "lng": -0.1024
+      },
       "estimated_minutes": 15,
-      "transport": { "mode": "tram", "line": "Croydon Tramlink", "direction": "Continue eastbound" },
+      "transport": {
+        "mode": "tram",
+        "line": "Croydon Tramlink",
+        "direction": "Continue eastbound",
+        "from_station": null
+      },
       "directions": "Stay on the tram, continue to West Croydon. Check departure boards for Southern trains to Crystal Palace.",
       "sign_tip": "Signs on London Road or Station Road outside West Croydon.",
       "meal": null,
@@ -599,9 +843,17 @@
       "order": 27,
       "borough": "Bromley",
       "station": "Crystal Palace",
-      "coordinates": { "lat": 51.4178, "lng": -0.0726 },
+      "coordinates": {
+        "lat": 51.4178,
+        "lng": -0.0726
+      },
       "estimated_minutes": 22,
-      "transport": { "mode": "national_rail", "line": "Southern", "direction": "Northbound" },
+      "transport": {
+        "mode": "national_rail",
+        "line": "Southern",
+        "direction": "Northbound",
+        "from_station": "West Croydon"
+      },
       "directions": "Southern train or Overground from West Croydon to Crystal Palace. Long staircase up to street level. Then back down for Overground northbound.",
       "sign_tip": "Crystal Palace Parade at the top of the stairs is in Bromley.",
       "meal": null,
@@ -621,9 +873,17 @@
       "order": 28,
       "borough": "Lewisham",
       "station": "Forest Hill",
-      "coordinates": { "lat": 51.4394, "lng": -0.0533 },
+      "coordinates": {
+        "lat": 51.4394,
+        "lng": -0.0533
+      },
       "estimated_minutes": 15,
-      "transport": { "mode": "overground", "line": "Overground / Southern", "direction": "Northbound" },
+      "transport": {
+        "mode": "overground",
+        "line": "Overground / Southern",
+        "direction": "Northbound",
+        "from_station": "Crystal Palace"
+      },
       "directions": "Overground or Southern from Crystal Palace northbound. Alight at Forest Hill. Quick stop. Southern train may be right behind.",
       "sign_tip": "Signs on Devonshire Road outside the station.",
       "meal": null,
@@ -643,9 +903,17 @@
       "order": 29,
       "borough": "Southwark",
       "station": "London Bridge",
-      "coordinates": { "lat": 51.5052, "lng": -0.0864 },
+      "coordinates": {
+        "lat": 51.5052,
+        "lng": -0.0864
+      },
       "estimated_minutes": 22,
-      "transport": { "mode": "national_rail", "line": "Southern / Thameslink", "direction": "Northbound" },
+      "transport": {
+        "mode": "national_rail",
+        "line": "Southern / Thameslink",
+        "direction": "Northbound",
+        "from_station": "Forest Hill"
+      },
       "directions": "Train northbound from Forest Hill to London Bridge. Mid-afternoon - well before the evening rush.",
       "sign_tip": "Signs on Tooley Street or St Thomas Street. 4 boroughs to go.",
       "meal": null,
@@ -665,9 +933,17 @@
       "order": 30,
       "borough": "Lambeth",
       "station": "Waterloo",
-      "coordinates": { "lat": 51.5036, "lng": -0.1143 },
+      "coordinates": {
+        "lat": 51.5036,
+        "lng": -0.1143
+      },
       "estimated_minutes": 18,
-      "transport": { "mode": "national_rail", "line": "Train to Waterloo East, then walk", "direction": "Westbound" },
+      "transport": {
+        "mode": "national_rail",
+        "line": "Train to Waterloo East, then walk",
+        "direction": "Westbound",
+        "from_station": "London Bridge"
+      },
       "directions": "Train or Jubilee line from London Bridge to Waterloo East. Walk to Waterloo mainline - 5 minute hike between the two.",
       "sign_tip": "Lambeth signs on Waterloo Road, The Cut, or near the IMAX roundabout.",
       "meal": null,
@@ -687,9 +963,17 @@
       "order": 31,
       "borough": "Westminster",
       "station": "Embankment",
-      "coordinates": { "lat": 51.5074, "lng": -0.1223 },
+      "coordinates": {
+        "lat": 51.5074,
+        "lng": -0.1223
+      },
       "estimated_minutes": 12,
-      "transport": { "mode": "tube", "line": "Northern/Bakerloo line", "direction": "Northbound one stop" },
+      "transport": {
+        "mode": "tube",
+        "line": "Northern/Bakerloo line",
+        "direction": "Northbound one stop",
+        "from_station": "Waterloo"
+      },
       "directions": "Northern or Bakerloo line from Waterloo to Embankment. Head above ground briefly. Then back down for Northern line to Tottenham Court Road.",
       "sign_tip": "City of Westminster signs on Villiers Street.",
       "meal": null,
@@ -709,9 +993,17 @@
       "order": 32,
       "borough": "City of London",
       "station": "Farringdon (Barbican end)",
-      "coordinates": { "lat": 51.5203, "lng": -0.0890 },
+      "coordinates": {
+        "lat": 51.5203,
+        "lng": -0.089
+      },
       "estimated_minutes": 18,
-      "transport": { "mode": "tube", "line": "Elizabeth line", "direction": "Eastbound from Tottenham Court Road" },
+      "transport": {
+        "mode": "tube",
+        "line": "Elizabeth line",
+        "direction": "Eastbound from Tottenham Court Road",
+        "from_station": "Embankment"
+      },
       "directions": "Northern line from Embankment to Tottenham Court Road. Change to Elizabeth line eastbound. Alight at Farringdon, exit via the Barbican/Long Lane end. ALMOST DONE.",
       "sign_tip": "City of London has distinctive signs with the dragon crest - very different from the other 32. Look on Long Lane or Charterhouse Street.",
       "meal": null,
@@ -731,9 +1023,17 @@
       "order": 33,
       "borough": "Bexley",
       "station": "Abbey Wood",
-      "coordinates": { "lat": 51.4910, "lng": 0.1203 },
+      "coordinates": {
+        "lat": 51.491,
+        "lng": 0.1203
+      },
       "estimated_minutes": 30,
-      "transport": { "mode": "tube", "line": "Elizabeth line", "direction": "Eastbound to Abbey Wood (NOT Shenfield)" },
+      "transport": {
+        "mode": "tube",
+        "line": "Elizabeth line",
+        "direction": "Eastbound to Abbey Wood (NOT Shenfield)",
+        "from_station": "Farringdon"
+      },
       "directions": "Elizabeth line eastbound from Farringdon - take the ABBEY WOOD branch this time (not Shenfield). Ride to the terminus. The street outside is in Bexley. FINAL BOROUGH. Then short bus or walk home to Greenwich.",
       "sign_tip": "Signs on Harrow Manorway or Wilton Road. Take your victory photo!",
       "meal": null,

@@ -76,14 +76,14 @@ export default function CurrentBorough({ step, onComplete }) {
       {/* === TRANSPORT: How to get there === */}
       <div className="space-y-2">
         {/*
-          * Station name — the most important piece of info in this section.
-          * Displayed prominently with a small "maps" button inline next to it.
-          * The maps link uses target="_blank" to open Google Maps app on mobile.
+          * "Go to:" — the destination station, the most important info.
+          * Shown prominently with a small inline maps button.
           */}
         {step.station && (
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap">
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-              📍 {step.station}
+              <span className="text-gray-500 dark:text-gray-400 font-normal">Go to:</span>{' '}
+              {step.station}
             </h3>
             {/* Tiny inline maps button next to the station name */}
             <a
@@ -98,8 +98,18 @@ export default function CurrentBorough({ step, onComplete }) {
           </div>
         )}
 
-        {/* TfL-coloured transport badge */}
-        <TransportBadge transport={step.transport} />
+        {/*
+          * "Via:" — shows the boarding station, transport mode, and direction.
+          * Compact two-line layout: "from X" on one line, badge+direction on next.
+          */}
+        <div className="text-sm space-y-1">
+          {step.transport.from_station && (
+            <p className="text-gray-500 dark:text-gray-400">
+              From <span className="font-medium text-gray-700 dark:text-gray-300">{step.transport.from_station}</span>
+            </p>
+          )}
+          <TransportBadge transport={step.transport} />
+        </div>
 
         {/* Detailed directions prose */}
         <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
