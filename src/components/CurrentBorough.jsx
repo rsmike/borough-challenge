@@ -84,11 +84,12 @@ export default function CurrentBorough({ step, onComplete }) {
       {/* === TRANSPORT: How to get there === */}
       <div className="space-y-2">
         {/*
-          * "Go to:" line — the destination station name (most important info),
-          * followed by a coloured line pill showing which TfL line it's on,
-          * and a small maps button.
+          * "Go to:" line — the destination station name (most important info)
+          * with a tiny maps button. Line pill is deliberately omitted here —
+          * the transport line is already shown on the "From" line below,
+          * and in most cases the destination is on the same line anyway.
           *
-          * Example: "Go to: Romford [Elizabeth] [Map]"
+          * Example: "Go to: Romford [Map]"
           */}
         {step.station && (
           <div className="flex items-center gap-2 flex-wrap">
@@ -96,14 +97,6 @@ export default function CurrentBorough({ step, onComplete }) {
               <span className="text-gray-500 dark:text-gray-400 font-normal">Go to:</span>{' '}
               {step.station}
             </h3>
-            {/*
-              * Show line pill next to station ONLY when there's no "From" line below
-              * (i.e. no from_station). Otherwise the pill already appears in the
-              * "From X [Line]: direction" line and showing it twice is redundant.
-              */}
-            {line && mode !== 'walk' && mode !== 'start' && !from_station && (
-              <LinePill mode={mode} line={line} />
-            )}
             {/* Tiny maps button */}
             <a
               href={mapsUrl}
@@ -144,24 +137,20 @@ export default function CurrentBorough({ step, onComplete }) {
 
         {/*
           * Compact direction line for non-walk/non-start transport modes.
-          * Format: "From Canary Wharf [Elizabeth]: Eastbound to Shenfield"
-          * All on one flowing line, wrapping naturally at word boundaries.
+          * Pill comes first so you immediately see the mode of transport.
+          * Format: "[Elizabeth] From Canary Wharf: Eastbound to Shenfield"
           */}
         {mode !== 'walk' && mode !== 'start' && from_station && (
           <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-            From{' '}
-            <span className="font-semibold text-gray-800 dark:text-gray-200">{from_station}</span>
-            {' '}
-            {/*
-              * LinePill is an inline element (span) so it flows naturally in text.
-              * Using inline-flex on the pill ensures it sits on the text baseline.
-              */}
+            {/* LinePill first — mode of transport is the first thing you see */}
             <LinePill mode={mode} line={line} />
+            {' '}From{' '}
+            <span className="font-semibold text-gray-800 dark:text-gray-200">{from_station}</span>
             {direction && (
-              <span className="text-gray-600 dark:text-gray-400">
+              <>
                 {': '}
                 <em>{direction}</em>
-              </span>
+              </>
             )}
           </p>
         )}
