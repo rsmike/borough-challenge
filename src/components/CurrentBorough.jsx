@@ -75,19 +75,31 @@ export default function CurrentBorough({ step, onComplete }) {
 
       {/* === TRANSPORT: How to get there === */}
       <div className="space-y-2">
-        <h3 className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">
-          Getting there
-        </h3>
+        {/*
+          * Station name — the most important piece of info in this section.
+          * Displayed prominently with a small "maps" button inline next to it.
+          * The maps link uses target="_blank" to open Google Maps app on mobile.
+          */}
+        {step.station && (
+          <div className="flex items-center gap-2">
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              📍 {step.station}
+            </h3>
+            {/* Tiny inline maps button next to the station name */}
+            <a
+              href={mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+              title="Open in Google Maps"
+            >
+              🗺️ Map
+            </a>
+          </div>
+        )}
 
         {/* TfL-coloured transport badge */}
         <TransportBadge transport={step.transport} />
-
-        {/* Station name (if different from what's in the transport badge) */}
-        {step.station && (
-          <p className="text-sm text-gray-700 dark:text-gray-300">
-            📍 {step.station}
-          </p>
-        )}
 
         {/* Detailed directions prose */}
         <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
@@ -115,16 +127,6 @@ export default function CurrentBorough({ step, onComplete }) {
           </p>
         </div>
       )}
-
-      {/* === OPEN MAPS BUTTON === */}
-      <a
-        href={mapsUrl}
-        target="_blank"         /* open in new tab/app */
-        rel="noopener noreferrer" /* security: prevent the opened page from accessing window.opener */
-        className="flex items-center justify-center gap-2 w-full py-2.5 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 rounded-lg text-sm font-medium transition-colors"
-      >
-        🗺️ Open in Maps
-      </a>
 
       {/* === BOROUGH INFO: Collapsible etymology/history/trivia === */}
       <BoroughInfo info={step.borough_info} />
