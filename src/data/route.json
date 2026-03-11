@@ -281,10 +281,10 @@
       "transport": {
         "mode": "tube",
         "line": "Victoria line",
-        "direction": "Northbound (one stop)",
+        "direction": "Southbound? (one stop)",
         "from_station": "Blackhorse Road"
       },
-      "directions": "Victoria line northbound one stop from Blackhorse Road. The interchange at Tottenham Hale forces you out through a gateline onto the street.",
+      "directions": "Victoria line southbound one stop from Blackhorse Road. The interchange at Tottenham Hale forces you out through a gateline onto the street.",
       "sign_tip": "Signs on the Hale Village side or along the High Road.",
       "meal": null,
       "meal_note": null,
@@ -314,7 +314,7 @@
         "direction": "Northbound",
         "from_station": "Tottenham Hale"
       },
-      "directions": "National Rail from Tottenham Hale to Meridian Water. CRITICAL: trains run every 30 minutes. Know your exact train time before leaving Blackhorse Road. This is the number one timetable risk of the day.",
+      "directions": "National Rail from Tottenham Hale to Meridian Water. CRITICAL: trains run every 30 minutes. Backup: Bus 192 towards Enfield.",
       "sign_tip": "New station surrounded by construction. Signs may be sparse - try Leeside Road or Argon Road. Do not wander far.",
       "meal": null,
       "meal_note": null,
@@ -344,7 +344,7 @@
         "direction": "Southbound",
         "from_station": "Tottenham Hale"
       },
-      "directions": "Train back to Tottenham Hale, then Victoria line southbound to Finsbury Park. Station is in Islington.",
+      "directions": "Train/bus back to Tottenham Hale, then Victoria line southbound to Finsbury Park. Station is in Islington.",
       "sign_tip": "Signs on Seven Sisters Road or Wells Terrace outside the station.",
       "meal": null,
       "meal_note": null,
@@ -464,7 +464,7 @@
         "direction": "Northbound to Cricklewood",
         "from_station": "Brondesbury"
       },
-      "directions": "189 bus from Brondesbury to Cricklewood. Watch for diversions - the original DG attempt hit a diverted bus here. If disrupted, walk to Kilburn and take Jubilee line to Willesden Green, then walk.",
+      "directions": "189/16/32/316 bus from Brondesbury to Cricklewood. Watch for diversions - the original DG attempt hit a diverted bus here. If disrupted, walk to Kilburn and take Jubilee line to Willesden Green, then walk.",
       "sign_tip": "Cricklewood Broadway should have Barnet signs.",
       "meal": null,
       "meal_note": null,
@@ -487,14 +487,14 @@
         "lat": 51.5793,
         "lng": -0.3372
       },
-      "estimated_minutes": 38,
+      "estimated_minutes": 40,
       "transport": {
         "mode": "tube",
         "line": "Metropolitan line",
         "direction": "Northwestbound",
         "from_station": "Willesden Green / Kilburn"
       },
-      "directions": "Get to Willesden Green or Kilburn (Jubilee line or bus). Take Metropolitan line northwestbound to Harrow-on-the-Hill. Switch here from Watford-direction to Uxbridge-direction.",
+      "directions": "Long one. Get to Willesden Green or Kilburn (Jubilee line or bus). Take Metropolitan line northwestbound to Harrow-on-the-Hill. Switch here from Watford-direction to Uxbridge-direction.",
       "sign_tip": "Signs on College Road outside the station.",
       "meal": null,
       "meal_note": null,

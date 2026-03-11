@@ -35,6 +35,8 @@ export default function CompletedItem({ step, onUndo }) {
 
   // Google Maps URL for this step
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${step.coordinates.lat},${step.coordinates.lng}`
+  // Citymapper deep link
+  const cityMapperUrl = `https://citymapper.com/directions?endcoord=${step.coordinates.lat},${step.coordinates.lng}&endname=${encodeURIComponent(step.station || step.borough)}`
 
   return (
     <div>
@@ -90,6 +92,15 @@ export default function CompletedItem({ step, onUndo }) {
                 title="Open in Google Maps"
               >
                 🗺️ Map
+              </a>
+              <a
+                href={cityMapperUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-medium bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 hover:bg-green-200 dark:hover:bg-green-800/40 transition-colors"
+                title="Open in Citymapper"
+              >
+                🧭 City
               </a>
             </div>
           )}

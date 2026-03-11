@@ -43,6 +43,13 @@ export default function CurrentBorough({ step, onComplete }) {
    */
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${step.coordinates.lat},${step.coordinates.lng}`
 
+  /*
+   * Citymapper deep link — opens the Citymapper app if installed,
+   * otherwise falls back to the web version. Uses endcoord for the
+   * destination and endname for a human-readable label.
+   */
+  const cityMapperUrl = `https://citymapper.com/directions?endcoord=${step.coordinates.lat},${step.coordinates.lng}&endname=${encodeURIComponent(step.station || step.borough)}`
+
   // Meal emoji based on meal type
   const mealEmoji = step.meal === 'breakfast' ? '🍳' : step.meal === 'lunch' ? '🍔' : '🍽️'
 
@@ -106,6 +113,16 @@ export default function CurrentBorough({ step, onComplete }) {
               title="Open in Google Maps"
             >
               🗺️ Map
+            </a>
+            {/* Citymapper button */}
+            <a
+              href={cityMapperUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-medium bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 hover:bg-green-200 dark:hover:bg-green-800/40 transition-colors"
+              title="Open in Citymapper"
+            >
+              🧭 City
             </a>
           </div>
         )}
