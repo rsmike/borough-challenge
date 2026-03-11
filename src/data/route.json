@@ -6,7 +6,7 @@
     "version": "3.0",
     "based_on": "Diamond Geezer's January 2026 route, adapted for Greenwich start with photo challenge",
     "source_url": "https://diamondgeezer.blogspot.com/2026/01/33-boroughs-in-one-day.html",
-    "estimated_total_minutes": 636,
+    "estimated_total_minutes": 802,
     "recommended_start": "06:00",
     "total_walking_miles": 8,
     "notes": "Each step's estimated_minutes includes travel from the previous stop, average wait time, and time to find/photograph a street sign. Meal breaks are included where marked."
@@ -67,7 +67,7 @@
         "lat": 51.4834,
         "lng": -0.0098
       },
-      "estimated_minutes": 10,
+      "estimated_minutes": 13,
       "transport": {
         "mode": "start",
         "line": null,
@@ -97,7 +97,7 @@
         "lat": 51.5054,
         "lng": -0.0235
       },
-      "estimated_minutes": 25,
+      "estimated_minutes": 31,
       "transport": {
         "mode": "dlr",
         "line": "DLR",
@@ -127,7 +127,7 @@
         "lat": 51.5753,
         "lng": 0.1827
       },
-      "estimated_minutes": 35,
+      "estimated_minutes": 44,
       "transport": {
         "mode": "tube",
         "line": "Elizabeth line",
@@ -157,7 +157,7 @@
         "lat": 51.5684,
         "lng": 0.1312
       },
-      "estimated_minutes": 12,
+      "estimated_minutes": 15,
       "transport": {
         "mode": "tube",
         "line": "Elizabeth line",
@@ -187,7 +187,7 @@
         "lat": 51.5681,
         "lng": 0.1305
       },
-      "estimated_minutes": 5,
+      "estimated_minutes": 6,
       "transport": {
         "mode": "walk",
         "line": null,
@@ -217,7 +217,7 @@
         "lat": 51.549,
         "lng": 0.0247
       },
-      "estimated_minutes": 20,
+      "estimated_minutes": 25,
       "transport": {
         "mode": "tube",
         "line": "Elizabeth line",
@@ -247,7 +247,7 @@
         "lat": 51.5867,
         "lng": -0.0413
       },
-      "estimated_minutes": 25,
+      "estimated_minutes": 31,
       "transport": {
         "mode": "overground",
         "line": "Overground / Victoria line",
@@ -277,7 +277,7 @@
         "lat": 51.5882,
         "lng": -0.0602
       },
-      "estimated_minutes": 12,
+      "estimated_minutes": 15,
       "transport": {
         "mode": "tube",
         "line": "Victoria line",
@@ -307,7 +307,7 @@
         "lat": 51.6065,
         "lng": -0.0493
       },
-      "estimated_minutes": 25,
+      "estimated_minutes": 31,
       "transport": {
         "mode": "national_rail",
         "line": "Greater Anglia",
@@ -337,7 +337,7 @@
         "lat": 51.5642,
         "lng": -0.1065
       },
-      "estimated_minutes": 22,
+      "estimated_minutes": 28,
       "transport": {
         "mode": "tube",
         "line": "Victoria line",
@@ -367,7 +367,7 @@
         "lat": 51.5652,
         "lng": -0.1035
       },
-      "estimated_minutes": 10,
+      "estimated_minutes": 13,
       "transport": {
         "mode": "walk",
         "line": null,
@@ -397,7 +397,7 @@
         "lat": 51.5452,
         "lng": -0.2028
       },
-      "estimated_minutes": 30,
+      "estimated_minutes": 38,
       "transport": {
         "mode": "overground",
         "line": "Overground (Mildmay line)",
@@ -427,7 +427,7 @@
         "lat": 51.5445,
         "lng": -0.2028
       },
-      "estimated_minutes": 5,
+      "estimated_minutes": 6,
       "transport": {
         "mode": "walk",
         "line": null,
@@ -457,7 +457,7 @@
         "lat": 51.5576,
         "lng": -0.2126
       },
-      "estimated_minutes": 15,
+      "estimated_minutes": 19,
       "transport": {
         "mode": "bus",
         "line": "189",
@@ -487,7 +487,7 @@
         "lat": 51.5793,
         "lng": -0.3372
       },
-      "estimated_minutes": 30,
+      "estimated_minutes": 38,
       "transport": {
         "mode": "tube",
         "line": "Metropolitan line",
@@ -517,7 +517,7 @@
         "lat": 51.5764,
         "lng": -0.3972
       },
-      "estimated_minutes": 18,
+      "estimated_minutes": 23,
       "transport": {
         "mode": "tube",
         "line": "Metropolitan/Piccadilly line",
@@ -547,7 +547,7 @@
         "lat": 51.5028,
         "lng": -0.2801
       },
-      "estimated_minutes": 28,
+      "estimated_minutes": 35,
       "transport": {
         "mode": "tube",
         "line": "Piccadilly line",
@@ -577,7 +577,7 @@
         "lat": 51.5022,
         "lng": -0.2812
       },
-      "estimated_minutes": 8,
+      "estimated_minutes": 10,
       "transport": {
         "mode": "walk",
         "line": null,
@@ -607,7 +607,7 @@
         "lat": 51.4924,
         "lng": -0.2226
       },
-      "estimated_minutes": 15,
+      "estimated_minutes": 19,
       "transport": {
         "mode": "tube",
         "line": "Piccadilly/District line",
@@ -637,7 +637,7 @@
         "lat": 51.4878,
         "lng": -0.2274
       },
-      "estimated_minutes": 22,
+      "estimated_minutes": 28,
       "transport": {
         "mode": "walk",
         "line": null,
@@ -667,7 +667,7 @@
         "lat": 51.4914,
         "lng": -0.1935
       },
-      "estimated_minutes": 20,
+      "estimated_minutes": 25,
       "transport": {
         "mode": "tube",
         "line": "District line",
@@ -697,7 +697,7 @@
         "lat": 51.4454,
         "lng": -0.2066
       },
-      "estimated_minutes": 15,
+      "estimated_minutes": 19,
       "transport": {
         "mode": "tube",
         "line": "District line",
@@ -727,7 +727,7 @@
         "lat": 51.4214,
         "lng": -0.2064
       },
-      "estimated_minutes": 25,
+      "estimated_minutes": 31,
       "transport": {
         "mode": "tube",
         "line": "District line",
@@ -757,7 +757,7 @@
         "lat": 51.4033,
         "lng": -0.2553
       },
-      "estimated_minutes": 22,
+      "estimated_minutes": 28,
       "transport": {
         "mode": "national_rail",
         "line": "South Western Railway",
@@ -787,7 +787,7 @@
         "lat": 51.3715,
         "lng": -0.1493
       },
-      "estimated_minutes": 30,
+      "estimated_minutes": 38,
       "transport": {
         "mode": "tram",
         "line": "Croydon Tramlink",
@@ -817,7 +817,7 @@
         "lat": 51.3782,
         "lng": -0.1024
       },
-      "estimated_minutes": 15,
+      "estimated_minutes": 19,
       "transport": {
         "mode": "tram",
         "line": "Croydon Tramlink",
@@ -847,7 +847,7 @@
         "lat": 51.4178,
         "lng": -0.0726
       },
-      "estimated_minutes": 22,
+      "estimated_minutes": 28,
       "transport": {
         "mode": "national_rail",
         "line": "Southern",
@@ -877,7 +877,7 @@
         "lat": 51.4394,
         "lng": -0.0533
       },
-      "estimated_minutes": 15,
+      "estimated_minutes": 19,
       "transport": {
         "mode": "overground",
         "line": "Overground / Southern",
@@ -907,7 +907,7 @@
         "lat": 51.5052,
         "lng": -0.0864
       },
-      "estimated_minutes": 22,
+      "estimated_minutes": 28,
       "transport": {
         "mode": "national_rail",
         "line": "Southern / Thameslink",
@@ -937,7 +937,7 @@
         "lat": 51.5036,
         "lng": -0.1143
       },
-      "estimated_minutes": 18,
+      "estimated_minutes": 23,
       "transport": {
         "mode": "national_rail",
         "line": "Train to Waterloo East, then walk",
@@ -967,7 +967,7 @@
         "lat": 51.5074,
         "lng": -0.1223
       },
-      "estimated_minutes": 12,
+      "estimated_minutes": 15,
       "transport": {
         "mode": "tube",
         "line": "Northern/Bakerloo line",
@@ -997,7 +997,7 @@
         "lat": 51.5203,
         "lng": -0.089
       },
-      "estimated_minutes": 18,
+      "estimated_minutes": 23,
       "transport": {
         "mode": "tube",
         "line": "Elizabeth line",
@@ -1027,7 +1027,7 @@
         "lat": 51.491,
         "lng": 0.1203
       },
-      "estimated_minutes": 30,
+      "estimated_minutes": 38,
       "transport": {
         "mode": "tube",
         "line": "Elizabeth line",

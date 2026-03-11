@@ -207,7 +207,7 @@ export default function CurrentBorough({ step, onComplete }) {
         onClick={() => onComplete(step.order)}
         className="w-full py-3 bg-green-600 hover:bg-green-700 active:bg-green-800 text-white font-bold rounded-xl text-lg transition-colors min-h-[44px] shadow-sm"
       >
-        📸 Got the photo!
+        📸 Got {step.borough}!
       </button>
     </div>
   )
