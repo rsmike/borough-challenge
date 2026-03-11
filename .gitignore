@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Editor / OS
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Vite
+*.local
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
+
+# Backup files
+route.json.bak
+
+# Claude local settings
+.claude/settings.local.json

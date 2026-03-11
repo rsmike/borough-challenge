@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- viewport: mobile-friendly, prevent zoom on input focus (iOS) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- PWA: tells iOS Safari this can be a home-screen app -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- PWA: iOS status bar style when running as home-screen app -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- PWA: theme colour for Android Chrome address bar -->
+    <meta name="theme-color" content="#0019A8" />
+
+    <!-- Apple touch icon (shown on iOS home screen) -->
+    <link rel="apple-touch-icon" href="/borough-challenge/icons/icon-192.png" />
+
+    <title>33 Boroughs</title>
+  </head>
+  <body>
+    <!-- React mounts the entire app into this single div -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

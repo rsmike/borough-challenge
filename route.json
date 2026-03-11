@@ -1,0 +1,753 @@
+{
+  "meta": {
+    "title": "33 London Boroughs in One Day",
+    "subtitle": "Photo Challenge - Street Sign Edition",
+    "description": "Visit all 33 London boroughs in a single day, photographing a borough street name plate at each stop. Route starts and ends near Greenwich, optimised for weekday service.",
+    "version": "3.0",
+    "based_on": "Diamond Geezer's January 2026 route, adapted for Greenwich start with photo challenge",
+    "source_url": "https://diamondgeezer.blogspot.com/2026/01/33-boroughs-in-one-day.html",
+    "estimated_total_minutes": 636,
+    "recommended_start": "06:00",
+    "total_walking_miles": 8,
+    "notes": "Each step's estimated_minutes includes travel from the previous stop, average wait time, and time to find/photograph a street sign. Meal breaks are included where marked."
+  },
+  "tips": [
+    { "category": "critical", "title": "Check TfL status", "text": "Night before AND morning of. Victoria line is the single biggest point of failure on this route. Have a Plan B for the Haringey/Enfield section." },
+    { "category": "critical", "title": "Meridian Water timetable", "text": "Trains every 30 mins. Check the exact weekday timetable beforehand. Missing one train costs you 25-30 mins of dead time." },
+    { "category": "critical", "title": "Hammersmith Bridge", "text": "Check it is open to pedestrians before the day. It has had repeated closures. If shut, take District line to Richmond station instead (longer out-and-back, adds ~15 min)." },
+    { "category": "planning", "title": "Payment", "text": "Contactless or Oyster works on everything including the New Malden train. Daily cap will apply. No need for paper tickets." },
+    { "category": "planning", "title": "Phone battery", "text": "You will be using GPS navigation and taking 33+ photos over 10 hours. Bring a battery pack. Non-negotiable." },
+    { "category": "planning", "title": "Backup navigation", "text": "Citymapper or TfL Go as secondary planner. If a line goes down mid-route, you need to improvise quickly." },
+    { "category": "info", "title": "Street signs", "text": "Most London street name plates show the borough name underneath. Usually found within 1-2 minutes walk of any station exit. City of London has distinctive signs with the dragon crest." },
+    { "category": "info", "title": "Multi-borough stations", "text": "Chadwell Heath (Redbridge + Barking and Dagenham), Brondesbury (Brent + Camden), Acton Town (Ealing + Hounslow). Two signs per stop - budget extra time." },
+    { "category": "info", "title": "Shoes and comfort", "text": "7-8 miles of walking total, lots of stairs. Wear proper shoes. Dress in layers - you will be alternating between heated trains and cold streets." }
+  ],
+  "steps": [
+    {
+      "order": 1,
+      "borough": "Greenwich",
+      "station": "Home area",
+      "coordinates": { "lat": 51.4834, "lng": -0.0098 },
+      "estimated_minutes": 10,
+      "transport": { "mode": "start", "line": null, "direction": null },
+      "directions": "Start at home. Find and photograph a Greenwich borough street sign before you leave. Head to your nearest DLR station.",
+      "sign_tip": "Residential streets near you will have Greenwich signs. Get this one done before the day properly begins.",
+      "meal": "breakfast",
+      "meal_note": "Grab a sandwich from a local shop on the way to the DLR.",
+      "borough_info": {
+        "etymology": "From Old English 'Grenewic' - green settlement or green port. The 'wic' element typically meant a trading settlement.",
+        "history": "The Royal Observatory was established here in 1675, making Greenwich the home of the Prime Meridian and global timekeeping. Henry VIII was born at Greenwich Palace in 1491, and the area was a favourite royal residence for centuries. The Old Royal Naval College, designed by Wren, replaced the palace in the late 1600s.",
+        "trivia": [
+          "The Prime Meridian (0 degrees longitude) runs through Greenwich, making it the literal centre of world time.",
+          "Greenwich Mean Time was replaced by UTC in 1972, but the name stuck in everyday use.",
+          "The foot tunnel under the Thames to Island Gardens opened in 1902 and is still free to use.",
+          "The Cutty Sark is the world's last surviving tea clipper and took its name from a witch's short nightdress in a Robert Burns poem."
+        ]
+      }
+    },
+    {
+      "order": 2,
+      "borough": "Tower Hamlets",
+      "station": "Canary Wharf",
+      "coordinates": { "lat": 51.5054, "lng": -0.0235 },
+      "estimated_minutes": 25,
+      "transport": { "mode": "dlr", "line": "DLR", "direction": "Northbound towards Bank/Tower Gateway" },
+      "directions": "Take the DLR from your nearest station (Cutty Sark, Greenwich, or Deptford Bridge) to Canary Wharf. Exit at Canary Wharf DLR. Find the sign BEFORE entering the Elizabeth line station.",
+      "sign_tip": "Street signs on Westferry Road or around the shopping centre exits. Do not go into the Elizabeth line yet - find the sign first.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "Named after the small settlements - hamlets - that owed military service to the Tower of London. The 'Tower Division' militia recruited from these hamlets.",
+        "history": "The East End docklands were once the busiest port in the world, handling goods from across the British Empire. The borough has been shaped by successive waves of immigration - Huguenot silk weavers, Irish labourers, Ashkenazi Jews, and the Bangladeshi community who transformed Brick Lane. Canary Wharf was built on the ruins of the West India Docks from the late 1980s.",
+        "trivia": [
+          "Canary Wharf takes its name from a wharf that handled fruit from the Canary Islands.",
+          "One Canada Square was the UK's tallest building from 1991 to 2012.",
+          "The borough contains more of the Jack the Ripper murder sites than any other, all within a few streets of each other.",
+          "Brick Lane was named after the brick and tile manufacturing that dominated the area in the 15th century."
+        ]
+      }
+    },
+    {
+      "order": 3,
+      "borough": "Havering",
+      "station": "Romford",
+      "coordinates": { "lat": 51.5753, "lng": 0.1827 },
+      "estimated_minutes": 35,
+      "transport": { "mode": "tube", "line": "Elizabeth line", "direction": "Eastbound to Shenfield" },
+      "directions": "Enter Canary Wharf Elizabeth line station. Take eastbound train towards Shenfield (NOT Abbey Wood - different branch). Ride to Romford.",
+      "sign_tip": "Signs on South Street right outside the station.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "Probably from Old English 'Haefer-ing' - the place of the council or assembly. Legend claims it refers to a conversation ('havering') between a local woman and King Edward the Confessor.",
+        "history": "Romford market has operated continuously since a royal charter was granted in 1247, making it one of England's oldest. The area remained part of Essex until 1965 when it was absorbed into Greater London, something many locals still have not forgiven. The Liberty of Havering was an ancient royal liberty with special privileges, essentially self-governing for centuries.",
+        "trivia": [
+          "Havering is London's most easterly borough and has the lowest population density of any London borough.",
+          "Romford's market charter predates Parliament by just 18 years.",
+          "The Romford Greyhound Stadium operated from 1929 to 2017 and was one of London's last dog tracks.",
+          "Havering was the last part of London to get the Tube - the Elizabeth line only arrived in 2022."
+        ]
+      }
+    },
+    {
+      "order": 4,
+      "borough": "Redbridge",
+      "station": "Chadwell Heath",
+      "coordinates": { "lat": 51.5684, "lng": 0.1312 },
+      "estimated_minutes": 12,
+      "transport": { "mode": "tube", "line": "Elizabeth line", "direction": "Westbound" },
+      "directions": "Elizabeth line westbound from Romford. Alight at Chadwell Heath. The ticket hall is in Redbridge. Find your Redbridge sign, then step outside for Barking and Dagenham.",
+      "sign_tip": "Look for Redbridge signs near the station entrance or on the streets to the north. B&D signs are on the streets to the south.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "Named after a red-painted bridge over the River Roding at Ilford. The original bridge is long gone, but the name survived.",
+        "history": "The borough was formed in 1965 by merging Ilford, Wanstead and Woodford, and parts of Chigwell and Dagenham. Winston Churchill served as MP for Woodford from 1945 to 1964. Valentines Mansion in Valentines Park dates from 1696 and is one of the best-preserved Georgian houses in east London.",
+        "trivia": [
+          "Winston Churchill represented the Woodford constituency for 19 years.",
+          "Redbridge gets its name from a bridge that no longer exists over a river most people have never heard of.",
+          "Ilford was home to the Ilford film and photographic paper company - fitting for a photo challenge.",
+          "Hainault Forest is a surviving fragment of the ancient Royal Forest of Essex."
+        ]
+      }
+    },
+    {
+      "order": 5,
+      "borough": "Barking & Dagenham",
+      "station": "Chadwell Heath (outside)",
+      "coordinates": { "lat": 51.5681, "lng": 0.1305 },
+      "estimated_minutes": 5,
+      "transport": { "mode": "walk", "line": null, "direction": null },
+      "directions": "Walk outside Chadwell Heath station to the south side. The pavement is in Barking and Dagenham. Two boroughs from one station.",
+      "sign_tip": "Look on the residential streets immediately south of the station for a B&D street plate.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "Barking comes from 'Berecingas' - the people of a Saxon chief named Bereca. Dagenham is 'Daecca's homestead'.",
+        "history": "Barking Abbey, founded in 666 AD, was one of the most important monasteries in England for almost 900 years until Henry VIII dissolved it. The Ford Dagenham plant opened in 1931 and at its peak employed over 40,000 workers. The 1968 Ford sewing machinists' strike at the plant, led by women demanding equal pay, directly inspired the Equal Pay Act 1970.",
+        "trivia": [
+          "The 1968 Ford sewing machinists' strike was turned into the film 'Made in Dagenham' (2010).",
+          "Bobby Moore, captain of England's 1966 World Cup winning team, was born in Barking.",
+          "The Becontree Estate, built in the 1920s-30s, was the largest public housing estate in the world with over 25,000 homes.",
+          "Barking Abbey's abbess once held the rank of a baroness and sat in medieval parliaments."
+        ]
+      }
+    },
+    {
+      "order": 6,
+      "borough": "Newham",
+      "station": "Forest Gate",
+      "coordinates": { "lat": 51.5490, "lng": 0.0247 },
+      "estimated_minutes": 20,
+      "transport": { "mode": "tube", "line": "Elizabeth line", "direction": "Westbound" },
+      "directions": "Back into Chadwell Heath station, continue westbound on Elizabeth line to Forest Gate.",
+      "sign_tip": "Woodgrange Road outside the station should have Newham signs.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "Simply 'new ham' - a new borough created in 1965 from the merger of the old county boroughs of West Ham and East Ham.",
+        "history": "The Royal Docks (Royal Albert, Royal Victoria, King George V) were once the largest enclosed docks in the world. The entire area was devastated by the Blitz and the subsequent closure of the docks in the 1980s. The 2012 Olympics transformed the borough, with the Olympic Park built on former industrial wasteland in Stratford.",
+        "trivia": [
+          "Newham is one of the most ethnically diverse places on Earth - over 100 languages are spoken in the borough.",
+          "The borough has the youngest average population age in London.",
+          "West Ham United played at the Boleyn Ground in Upton Park from 1904 to 2016 before moving to the former Olympic Stadium.",
+          "The Thames Barrier, which protects London from flooding, spans the river at Newham's southern boundary."
+        ]
+      }
+    },
+    {
+      "order": 7,
+      "borough": "Waltham Forest",
+      "station": "Blackhorse Road",
+      "coordinates": { "lat": 51.5867, "lng": -0.0413 },
+      "estimated_minutes": 25,
+      "transport": { "mode": "overground", "line": "Overground / Victoria line", "direction": "Northbound" },
+      "directions": "From Forest Gate, get to Blackhorse Road. Best options: Elizabeth line to Stratford then Overground northbound, or Elizabeth line to Liverpool Street then Victoria line. Check which is faster on the day. CHECK VICTORIA LINE STATUS HERE.",
+      "sign_tip": "Signs on Blackhorse Lane outside the station.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "Named after Walthamstow ('the place of welcome') and Epping Forest. The 'Waltham' element may come from Old English 'weald-ham' - forest settlement.",
+        "history": "William Morris, the designer, artist and socialist, was born in Walthamstow in 1834. The William Morris Gallery in his childhood home is the only public museum devoted to him. Epping Forest, protected by the Epping Forest Act of 1878, forms the borough's eastern edge.",
+        "trivia": [
+          "Waltham Forest was London Borough of Culture in 2019.",
+          "The borough's name was nearly just 'Walthamstow' but councillors added 'Forest' to acknowledge the leafy eastern half.",
+          "Walthamstow Marshes is one of the last surviving examples of semi-natural wetland in Greater London.",
+          "A.V. Roe made one of Britain's first powered flights from Walthamstow Marshes in 1909."
+        ]
+      }
+    },
+    {
+      "order": 8,
+      "borough": "Haringey",
+      "station": "Tottenham Hale",
+      "coordinates": { "lat": 51.5882, "lng": -0.0602 },
+      "estimated_minutes": 12,
+      "transport": { "mode": "tube", "line": "Victoria line", "direction": "Northbound (one stop)" },
+      "directions": "Victoria line northbound one stop from Blackhorse Road. The interchange at Tottenham Hale forces you out through a gateline onto the street.",
+      "sign_tip": "Signs on the Hale Village side or along the High Road.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "From the medieval Manor of Haringey, possibly meaning 'enclosure in the grey wood' or from a personal name Hering.",
+        "history": "Alexandra Palace, known as 'the People's Palace', opened in 1873 and burned down just 16 days later, then was rebuilt. In 1936 the BBC made the world's first regular public television broadcasts from studios at Alexandra Palace. Highgate Cemetery, opened in 1839, became the final resting place of Karl Marx, George Eliot, and Douglas Adams.",
+        "trivia": [
+          "The BBC's first TV broadcast in 1936 reached an audience of about 400 people within a 35-mile radius of Alexandra Palace.",
+          "Tottenham Hotspur FC is named after Harry Hotspur (Henry Percy), a medieval knight with no actual connection to the area.",
+          "The Tottenham Outrage of 1909 - a robbery and police chase - led to the first use of commandeered vehicles in British policing.",
+          "Bruce Castle in Tottenham has nothing to do with Robert the Bruce - it is named after the House of Bruce who owned the local manor."
+        ]
+      }
+    },
+    {
+      "order": 9,
+      "borough": "Enfield",
+      "station": "Meridian Water",
+      "coordinates": { "lat": 51.6065, "lng": -0.0493 },
+      "estimated_minutes": 25,
+      "transport": { "mode": "national_rail", "line": "Greater Anglia", "direction": "Northbound" },
+      "directions": "National Rail from Tottenham Hale to Meridian Water. CRITICAL: trains run every 30 minutes. Know your exact train time before leaving Blackhorse Road. This is the number one timetable risk of the day.",
+      "sign_tip": "New station surrounded by construction. Signs may be sparse - try Leeside Road or Argon Road. Do not wander far.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "Probably 'Eana's field' - a personal name plus the Old English 'feld' for open land.",
+        "history": "Enfield Chase was a royal hunting ground covering thousands of acres until it was enclosed in 1777. The Royal Small Arms Factory at Enfield Lock produced the Lee-Enfield rifle, used by the British Army from 1895 to 1957, making Enfield synonymous with firearms worldwide. The borough was part of Middlesex until 1965.",
+        "trivia": [
+          "The Lee-Enfield rifle served the British Army for over 60 years and was used in both World Wars.",
+          "The Enfield Poltergeist case (1977-78) is one of the most documented alleged hauntings in British history and inspired 'The Conjuring 2'.",
+          "Enfield is London's most northerly borough.",
+          "The New River, which is not a river but an aqueduct, was built in 1613 to bring fresh water from Hertfordshire to London and still runs through the borough."
+        ]
+      }
+    },
+    {
+      "order": 10,
+      "borough": "Islington",
+      "station": "Finsbury Park",
+      "coordinates": { "lat": 51.5642, "lng": -0.1065 },
+      "estimated_minutes": 22,
+      "transport": { "mode": "tube", "line": "Victoria line", "direction": "Southbound" },
+      "directions": "Train back to Tottenham Hale, then Victoria line southbound to Finsbury Park. Station is in Islington.",
+      "sign_tip": "Signs on Seven Sisters Road or Wells Terrace outside the station.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "Possibly 'Gisla's hill' or 'Giseldone' - from a personal name plus Old English 'dun' (hill).",
+        "history": "In the 18th century Islington was a fashionable spa destination - Sadler's Wells theatre takes its name from a genuine mineral well discovered in 1683. The borough declined in the 19th century into overcrowded working-class housing, then gentrified dramatically from the 1980s onwards, becoming so associated with the liberal middle class that 'Islington dinner party' became a political cliche.",
+        "trivia": [
+          "Tony Blair lived in Islington before moving to Downing Street, cementing the 'Islington liberal' stereotype.",
+          "Islington has fewer private gardens per resident than any other London borough.",
+          "The Angel, Islington is a Monopoly square but there is no actual angel - it is named after a coaching inn.",
+          "Chapel Market is one of London's last surviving traditional street markets, trading since the 1870s."
+        ]
+      }
+    },
+    {
+      "order": 11,
+      "borough": "Hackney",
+      "station": "Near Finsbury Park",
+      "coordinates": { "lat": 51.5652, "lng": -0.1035 },
+      "estimated_minutes": 10,
+      "transport": { "mode": "walk", "line": null, "direction": "East along Seven Sisters Road" },
+      "directions": "Walk east from Finsbury Park station along Seven Sisters Road. The Hackney boundary is roughly 200m east. Watch for street signs to change from Islington to Hackney.",
+      "sign_tip": "The sign changeover is your proof. Watch for the borough name to switch on the street plates.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "From 'Haca's island' or 'Haca's raised ground' - referring to dry land in the marshes of the River Lea.",
+        "history": "For centuries Hackney was London's market garden, supplying the City with fresh produce. The borough was transformed by Victorian industrialisation and later became a centre of Caribbean culture after the Windrush generation settled in the 1950s and 60s. From the 2000s onwards it underwent one of London's most dramatic gentrifications.",
+        "trivia": [
+          "Hackney Marshes once had 88 full-size football pitches side by side - the largest concentration in Europe.",
+          "The word 'hackney' gave us 'hackney carriage' (taxi), though the connection is debated.",
+          "London Fields Lido, built in 1932, was rescued from dereliction and reopened as a heated outdoor pool in 2006.",
+          "Hackney was the only London borough without an Underground station until the Overground expanded in 2010."
+        ]
+      }
+    },
+    {
+      "order": 12,
+      "borough": "Brent",
+      "station": "Brondesbury",
+      "coordinates": { "lat": 51.5452, "lng": -0.2028 },
+      "estimated_minutes": 30,
+      "transport": { "mode": "overground", "line": "Overground (Mildmay line)", "direction": "Westbound from Highbury & Islington" },
+      "directions": "Walk back to Finsbury Park. Victoria line one stop south to Highbury & Islington. Change to Overground westbound. Allow up to 9 min wait. Alight at Brondesbury.",
+      "sign_tip": "Look for Brent signs on Salisbury Road near the station. Then cross the road south for Camden.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "Named after the River Brent, which may come from the Celtic goddess Brigantia, or from a word meaning 'holy river'.",
+        "history": "Wembley Stadium has defined Brent on the world stage. The original 1923 stadium hosted the legendary 'White Horse Final' FA Cup on its opening day, when an estimated 200,000 people attempted to enter a ground built for 127,000. The current stadium opened in 2007. The borough is one of the most culturally diverse in London.",
+        "trivia": [
+          "The 1923 FA Cup Final crowd was so enormous that a single white police horse named Billy became the iconic image of crowd control.",
+          "Wembley's iconic twin towers, demolished in 2003, were replaced by a 133-metre arch visible from across London.",
+          "Brent has more languages spoken within its borders than almost any other local authority in Europe.",
+          "Neasden Temple, opened in 1995, was built from 5,000 tonnes of hand-carved Italian marble and Indian limestone without using any structural steel."
+        ]
+      }
+    },
+    {
+      "order": 13,
+      "borough": "Camden",
+      "station": "Brondesbury (south side of road)",
+      "coordinates": { "lat": 51.5445, "lng": -0.2028 },
+      "estimated_minutes": 5,
+      "transport": { "mode": "walk", "line": null, "direction": "Cross to south side of road" },
+      "directions": "Cross to the south side of the road outside Brondesbury station. You are now in Camden. Find the sign, then catch a 189 bus northbound to Cricklewood.",
+      "sign_tip": "Look for Camden signs on the south side of Kilburn High Road.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "Named after Charles Pratt, 1st Earl Camden, the Lord Chancellor who owned land in the area in the 18th century.",
+        "history": "Camden Market started in 1974 as a small crafts market by the canal and grew into one of London's biggest tourist attractions, drawing 100,000+ visitors on weekends. The British Museum, which opened in 1759 in Bloomsbury, was the world's first national public museum. Highgate Cemetery, opened in 1839, became a fashionable Victorian resting place.",
+        "trivia": [
+          "Karl Marx is buried in Highgate Cemetery. His tomb originally had a modest headstone but was replaced with a massive bronze bust in 1956.",
+          "The Roundhouse in Chalk Farm was built in 1847 as a railway engine shed and only became a music venue in 1966.",
+          "Camden Lock is not actually a lock - the real lock is further along the canal, but the name stuck to the market.",
+          "A bronze statue of Amy Winehouse stands in the Stables Market - she lived in Camden for years."
+        ]
+      }
+    },
+    {
+      "order": 14,
+      "borough": "Barnet",
+      "station": "Cricklewood",
+      "coordinates": { "lat": 51.5576, "lng": -0.2126 },
+      "estimated_minutes": 15,
+      "transport": { "mode": "bus", "line": "189", "direction": "Northbound to Cricklewood" },
+      "directions": "189 bus from Brondesbury to Cricklewood. Watch for diversions - the original DG attempt hit a diverted bus here. If disrupted, walk to Kilburn and take Jubilee line to Willesden Green, then walk.",
+      "sign_tip": "Cricklewood Broadway should have Barnet signs.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "From Old English 'baernet' - a place cleared by burning. Woodland was burned to create farmland.",
+        "history": "The Battle of Barnet in 1471 was a pivotal engagement in the Wars of the Roses, where Yorkist Edward IV defeated and killed the Lancastrian Earl of Warwick. The area remained largely rural Middlesex until the Northern line arrived in the early 20th century. Barnet is now London's most populous borough.",
+        "trivia": [
+          "The Battle of Barnet was fought in such thick fog that Warwick's own men accidentally attacked each other.",
+          "Barnet Fair, held since 1588, gave Cockney rhyming slang the term 'barnet' for hair (Barnet Fair = hair).",
+          "'Barnet' meaning hair is probably the most widely used Cockney slang term that people do not realise is Cockney slang.",
+          "RAF Hendon, now the site of the Royal Air Force Museum, hosted spectacular air displays in the 1920s and 30s."
+        ]
+      }
+    },
+    {
+      "order": 15,
+      "borough": "Harrow",
+      "station": "Harrow-on-the-Hill",
+      "coordinates": { "lat": 51.5793, "lng": -0.3372 },
+      "estimated_minutes": 30,
+      "transport": { "mode": "tube", "line": "Metropolitan line", "direction": "Northwestbound" },
+      "directions": "Get to Willesden Green or Kilburn (Jubilee line or bus). Take Metropolitan line northwestbound to Harrow-on-the-Hill. Switch here from Watford-direction to Uxbridge-direction.",
+      "sign_tip": "Signs on College Road outside the station.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "From Old English 'hearg' - a heathen temple or shrine. The hill at Harrow was likely a pre-Christian sacred site.",
+        "history": "Harrow School was founded in 1572 under a Royal Charter from Elizabeth I and has educated seven British Prime Ministers. St Mary's Church has sat on top of Harrow Hill since at least the 11th century. The Metropolitan Railway's extension to Harrow in 1880 turned it from a rural village into a London suburb - the beginning of 'Metro-land'.",
+        "trivia": [
+          "Harrow School alumni include Winston Churchill, Lord Byron, Jawaharlal Nehru, and Benedict Cumberbatch.",
+          "Churchill was by his own account a terrible student at Harrow - he was placed in the lowest form on entry.",
+          "The term 'Metro-land' was coined by the Metropolitan Railway to market suburbs along its line.",
+          "Harrow has the largest Hindu population of any London borough."
+        ]
+      }
+    },
+    {
+      "order": 16,
+      "borough": "Hillingdon",
+      "station": "Eastcote",
+      "coordinates": { "lat": 51.5764, "lng": -0.3972 },
+      "estimated_minutes": 18,
+      "transport": { "mode": "tube", "line": "Metropolitan/Piccadilly line", "direction": "Westbound towards Uxbridge" },
+      "directions": "Metropolitan or Piccadilly line westbound to Eastcote. Deepest into west London. For the return: if you just miss a Piccadilly at Eastcote, walk to Rayners Lane (10 min) for better frequency.",
+      "sign_tip": "Signs on Field End Road outside the station.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "Probably 'Hilda's hill' or from an Old English personal name plus 'dun' (hill).",
+        "history": "Heathrow Airport, which opened as a civil airport in 1946, dominates the borough's southern half. RAF Uxbridge housed the No. 11 Group Fighter Command operations room during the Battle of Britain in 1940. Churchill visited on 15 September 1940 and reportedly first spoke the words that became 'never in the field of human conflict...' after watching operations there.",
+        "trivia": [
+          "Hillingdon is the second-largest London borough by area.",
+          "The Battle of Britain Bunker at RAF Uxbridge is where Keith Park directed the air defence of London and south-east England in 1940.",
+          "Heathrow handles roughly 80 million passengers per year.",
+          "Eastcote was home to one of the outposts that worked on breaking Enigma codes during WWII."
+        ]
+      }
+    },
+    {
+      "order": 17,
+      "borough": "Ealing",
+      "station": "Acton Town",
+      "coordinates": { "lat": 51.5028, "lng": -0.2801 },
+      "estimated_minutes": 28,
+      "transport": { "mode": "tube", "line": "Piccadilly line", "direction": "Eastbound/southbound" },
+      "directions": "Piccadilly line from Eastcote/Rayners Lane to Acton Town. Step outside - you are in Ealing. Hounslow is round the corner.",
+      "sign_tip": "Signs on Gunnersbury Lane. Then walk south/west for Hounslow boundary.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "From 'Gillingas' - the people of a man named Gilla. Nothing to do with eels.",
+        "history": "Ealing Studios, operating since 1902, is the oldest continuously working film studio in the world. It produced the famous Ealing Comedies of the late 1940s and 50s. Ealing was known as the 'Queen of the Suburbs' in Victorian times for its attractive housing and green spaces.",
+        "trivia": [
+          "Ealing Comedies like 'The Ladykillers', 'Kind Hearts and Coronets', and 'The Lavender Hill Mob' defined a genre of British cinema.",
+          "The borough nickname 'Queen of the Suburbs' dates from the 1900s but is still used by estate agents today.",
+          "Ealing Broadway was one of the first stations to get the Elizabeth line.",
+          "Pitzhanger Manor, designed by Sir John Soane as his country retreat, reopened as a gallery in 2019 after a major restoration."
+        ]
+      }
+    },
+    {
+      "order": 18,
+      "borough": "Hounslow",
+      "station": "Acton Town (round corner)",
+      "coordinates": { "lat": 51.5022, "lng": -0.2812 },
+      "estimated_minutes": 8,
+      "transport": { "mode": "walk", "line": null, "direction": "South/west of station" },
+      "directions": "Walk south/west from Acton Town station. The Hounslow borough boundary is right by the station. Look for the changeover on street signs.",
+      "sign_tip": "Might take a few minutes to find the exact boundary. Look for sign changeover from Ealing to Hounslow.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "Probably 'Hund's low' or 'dog's mound' - from a personal name or the Old English for hound, plus 'hlaw' (mound/barrow).",
+        "history": "Hounslow Heath was notorious as a haunt of highwaymen in the 17th and 18th centuries - it sat astride the main road west from London. The Great West Road became known as the 'Golden Mile' in the 1920s and 30s when major companies built grand Art Deco factories along it.",
+        "trivia": [
+          "Dick Turpin is said to have operated on Hounslow Heath, though most Turpin stories are heavily embellished.",
+          "The Firestone Factory on the Great West Road was demolished literally the night before it was due to be listed as a protected building in 1980.",
+          "Osterley Park House, designed by Robert Adam, is one of the finest surviving examples of Georgian interior design in England.",
+          "Hounslow has one of the largest Sikh communities in the UK."
+        ]
+      }
+    },
+    {
+      "order": 19,
+      "borough": "Hammersmith & Fulham",
+      "station": "Hammersmith",
+      "coordinates": { "lat": 51.4924, "lng": -0.2226 },
+      "estimated_minutes": 15,
+      "transport": { "mode": "tube", "line": "Piccadilly/District line", "direction": "Eastbound" },
+      "directions": "Piccadilly or District line from Acton Town to Hammersmith. HALFWAY POINT - 19 of 33 done. Walk south to Hammersmith Bridge for Richmond.",
+      "sign_tip": "Signs on King Street or Beadon Road outside the station.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "Hammersmith is probably from 'Hamor's landing place' or possibly from a hammer-working smithy. Fulham is 'Fulla's ham' - settlement in a river bend.",
+        "history": "Fulham Palace was the residence of the Bishops of London for over 1,000 years, from around 700 AD until 1973. BBC Television Centre in Shepherd's Bush opened in 1960 and was the BBC's headquarters for over 50 years. The borough is the smallest in London by area.",
+        "trivia": [
+          "Hammersmith has two Tube stations with the same name on different lines, about 100 metres apart.",
+          "Fulham Palace has the longest-known continuously occupied moated site in England.",
+          "The Hammersmith Apollo has hosted more live music acts than almost any venue in the world since opening in 1932.",
+          "The borough is just 1.5 miles wide at its narrowest point."
+        ]
+      }
+    },
+    {
+      "order": 20,
+      "borough": "Richmond upon Thames",
+      "station": "Hammersmith Bridge (south side)",
+      "coordinates": { "lat": 51.4878, "lng": -0.2274 },
+      "estimated_minutes": 22,
+      "transport": { "mode": "walk", "line": null, "direction": "South across Hammersmith Bridge, then back" },
+      "directions": "Walk south from Hammersmith to Hammersmith Bridge (~5 min). Cross on foot. South side is Richmond borough. Walk back. ~18 min round trip. CHECK BRIDGE IS OPEN TO PEDESTRIANS BEFORE THE DAY. Fallback: District line to Richmond station (adds ~15 min).",
+      "sign_tip": "Find a sign on Castelnau, the road on the south bank.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "Named after Richmond Palace, which Henry VII renamed from Sheen Palace after his earldom of Richmond in Yorkshire. Richmond in Yorkshire comes from Norman French 'riche mont' - strong hill.",
+        "history": "Richmond is the only London borough spanning both sides of the Thames. Hampton Court Palace, built by Cardinal Wolsey and seized by Henry VIII, is one of the most visited historic buildings in England. Kew Gardens, founded in 1759, is a UNESCO World Heritage Site and houses the largest collection of living plants in the world.",
+        "trivia": [
+          "Richmond Park is the largest Royal Park in London at 2,500 acres - you could fit the City of London inside it twice.",
+          "The park is home to around 630 free-roaming red and fallow deer.",
+          "The view from Richmond Hill is the only view in England protected by an Act of Parliament (1902).",
+          "Kew Gardens' Herbarium contains over 7 million preserved plant specimens."
+        ]
+      }
+    },
+    {
+      "order": 21,
+      "borough": "Kensington & Chelsea",
+      "station": "Earl's Court",
+      "coordinates": { "lat": 51.4914, "lng": -0.1935 },
+      "estimated_minutes": 20,
+      "transport": { "mode": "tube", "line": "District line", "direction": "Eastbound" },
+      "directions": "Back to Hammersmith, District line eastbound to Earl's Court. Walk out onto the street. Re-enter and get a Wimbledon-bound District line train.",
+      "sign_tip": "Royal Borough of Kensington and Chelsea signs on Earl's Court Road.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "Kensington is from 'Cynesige's farm'. Chelsea may come from 'Cealc-hyth' - chalk wharf, a landing place on the Thames.",
+        "history": "The Great Exhibition of 1851 in Hyde Park made such a profit that it funded the creation of 'Albertopolis' - the V&A, Natural History Museum, and Science Museum. King's Road in Chelsea was the epicentre of 1960s fashion and counterculture. The borough has some of the most expensive property in the world.",
+        "trivia": [
+          "Until 1830 King's Road was literally the King's private road - you needed a special token to use it.",
+          "Houses in Kensington Palace Gardens have sold for over 100 million pounds.",
+          "The Natural History Museum's blue whale skeleton, 'Hope', is 25.2 metres long.",
+          "The borough's population actually declined between 2011 and 2021 - one of very few London boroughs to shrink."
+        ]
+      }
+    },
+    {
+      "order": 22,
+      "borough": "Wandsworth",
+      "station": "Southfields",
+      "coordinates": { "lat": 51.4454, "lng": -0.2066 },
+      "estimated_minutes": 15,
+      "transport": { "mode": "tube", "line": "District line", "direction": "Wimbledon branch southbound" },
+      "directions": "District line Wimbledon branch from Earl's Court. Alight at Southfields. Quick nip out.",
+      "sign_tip": "Signs on Wimbledon Park Road.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "From 'Wendlesworth' - the enclosure of a man named Wendel. The River Wandle may share the same root.",
+        "history": "Battersea Power Station, designed by Giles Gilbert Scott, is one of the most iconic industrial buildings in the world. Young's Brewery in Wandsworth brewed beer on the same site from 1581 to 2006. Battersea Dogs and Cats Home has been rescuing strays since 1860.",
+        "trivia": [
+          "Battersea Power Station appeared on Pink Floyd's 'Animals' album cover with an inflatable pig floating between the chimneys.",
+          "Wandsworth Prison, opened in 1851, is one of the largest prisons in Western Europe.",
+          "Battersea Park hosted the first ever football match under FA rules in 1864.",
+          "Young's Brewery operated on the same Wandsworth site for 425 years before relocating to Bedford in 2006."
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "borough": "Merton",
+      "station": "Wimbledon",
+      "coordinates": { "lat": 51.4214, "lng": -0.2064 },
+      "estimated_minutes": 25,
+      "transport": { "mode": "tube", "line": "District line", "direction": "Terminus" },
+      "directions": "Continue on District line to Wimbledon terminus. LUNCH STOP - 15 minutes for food.",
+      "sign_tip": "Signs everywhere on The Broadway and Wimbledon Hill Road.",
+      "meal": "lunch",
+      "meal_note": "The Broadway has everything - Pret, Greggs, independent cafes, Nando's. Budget 15 minutes. You have earned it. Then National Rail for Kingston.",
+      "borough_info": {
+        "etymology": "From 'Merton' - settlement by the pool, from Old English 'mere' (pool/lake) and 'tun' (farmstead).",
+        "history": "Merton Priory, founded in 1114, was one of the most important Augustinian monasteries in England - Thomas Becket was educated there, and the Statute of Merton (1236) was one of the earliest English laws. William Morris established his workshop at Merton Abbey Mills in 1881. The Wimbledon Championships have been held since 1877.",
+        "trivia": [
+          "Wimbledon is the only Grand Slam tennis tournament still played on grass.",
+          "During the Championships, roughly 28,000 kg of strawberries are consumed.",
+          "The Baitul Futuh Mosque in Merton was the largest mosque in Western Europe when it opened in 2003.",
+          "Liberty print fabric was produced at the Merton Abbey Mills site until 1972."
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "borough": "Kingston upon Thames",
+      "station": "New Malden",
+      "coordinates": { "lat": 51.4033, "lng": -0.2553 },
+      "estimated_minutes": 22,
+      "transport": { "mode": "national_rail", "line": "South Western Railway", "direction": "Southwestbound (Hampton Court direction)" },
+      "directions": "National Rail from Wimbledon. Take a Hampton Court-direction train to New Malden. Out-and-back - return to Wimbledon for the tram.",
+      "sign_tip": "Royal Borough of Kingston upon Thames signs on New Malden High Street, right outside the station.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "'King's town' - believed to be the place where Anglo-Saxon kings were crowned. The name appears in records from 838 AD.",
+        "history": "Kingston claims to be the coronation site of seven Anglo-Saxon kings between 900 and 979 AD. The Coronation Stone, said to be the stone on which kings sat, still stands outside the Guildhall. Kingston market has operated since at least 1242.",
+        "trivia": [
+          "The Coronation Stone outside Kingston Guildhall is supposedly where Athelstan and six other Saxon kings were crowned.",
+          "New Malden has the largest Korean community in Europe - an estimated 20,000 Korean residents.",
+          "Kingston was the first place in England to install a telephone exchange, in 1882.",
+          "Jerome K. Jerome's 'Three Men in a Boat' begins and ends in Kingston."
+        ]
+      }
+    },
+    {
+      "order": 25,
+      "borough": "Sutton",
+      "station": "Beddington Lane (tram stop)",
+      "coordinates": { "lat": 51.3715, "lng": -0.1493 },
+      "estimated_minutes": 30,
+      "transport": { "mode": "tram", "line": "Croydon Tramlink", "direction": "Eastbound from Wimbledon" },
+      "directions": "Train back to Wimbledon. Pick up the tram (Tramlink) eastbound. Alight at Beddington Lane - first stop in Sutton. Therapia Lane also works.",
+      "sign_tip": "Industrial area - signs might take a moment. Look on Beddington Lane itself.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "'Southern farmstead' - from Old English 'suth' (south) and 'tun' (farmstead).",
+        "history": "Sutton was a quiet agricultural area until the railways arrived in the 1840s. Beddington Park contains the site of Carew Manor, where Sir Francis Carew grew the first orange trees in England in the 1560s using an early form of greenhouse. The borough has consistently been ranked among the safest in London.",
+        "trivia": [
+          "Carshalton's natural springs and ponds are fed by the River Wandle, which rises from chalk aquifers beneath the borough.",
+          "The first oranges grown in England were cultivated at Beddington in the 16th century.",
+          "Sutton regularly tops polls as one of London's safest outer boroughs.",
+          "The Sutton Life Centre contains a recreation of a typical London street used for disaster preparedness training."
+        ]
+      }
+    },
+    {
+      "order": 26,
+      "borough": "Croydon",
+      "station": "West Croydon",
+      "coordinates": { "lat": 51.3782, "lng": -0.1024 },
+      "estimated_minutes": 15,
+      "transport": { "mode": "tram", "line": "Croydon Tramlink", "direction": "Continue eastbound" },
+      "directions": "Stay on the tram, continue to West Croydon. Check departure boards for Southern trains to Crystal Palace.",
+      "sign_tip": "Signs on London Road or Station Road outside West Croydon.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "From 'Croh denu' - the valley where wild saffron (crocus) grows.",
+        "history": "Croydon Airport was London's main international airport from 1920 to 1959, before Heathrow took over. The Archbishops of Canterbury had a summer palace in Croydon from the medieval period until the 1780s. A massive postwar redevelopment in the 1960s gave Croydon its distinctive skyline of concrete tower blocks.",
+        "trivia": [
+          "Croydon Airport handled the first international scheduled air service (to Paris) in 1920. The terminal building is now a listed museum.",
+          "The borough's name literally means 'saffron valley' - wild crocuses once grew prolifically here.",
+          "Croydon is the most populous London borough - roughly 390,000 people.",
+          "The Croydon Tramlink, opened in 2000, was the first new tram system in London since the old trams were scrapped in 1952."
+        ]
+      }
+    },
+    {
+      "order": 27,
+      "borough": "Bromley",
+      "station": "Crystal Palace",
+      "coordinates": { "lat": 51.4178, "lng": -0.0726 },
+      "estimated_minutes": 22,
+      "transport": { "mode": "national_rail", "line": "Southern", "direction": "Northbound" },
+      "directions": "Southern train or Overground from West Croydon to Crystal Palace. Long staircase up to street level. Then back down for Overground northbound.",
+      "sign_tip": "Crystal Palace Parade at the top of the stairs is in Bromley.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "From Old English 'brom leah' - clearing where broom (the shrub) grows.",
+        "history": "Bromley is the largest London borough by area. Charles Darwin lived at Down House in Downe from 1842 until his death in 1882 - he wrote 'On the Origin of Species' there. The Crystal Palace, relocated from Hyde Park to Sydenham Hill in 1854, was a spectacular glass and iron exhibition hall that dominated the area until it burned down in 1936.",
+        "trivia": [
+          "The Crystal Palace dinosaur sculptures, created in 1854, were the world's first life-sized models of extinct animals - and they are gloriously inaccurate by modern standards.",
+          "David Bowie grew up in Bromley and attended Bromley Technical High School.",
+          "H.G. Wells was born in Bromley in 1866 and worked in a draper's shop on the High Street.",
+          "Bromley is bigger by area than several sovereign nations including Monaco, the Vatican, and San Marino."
+        ]
+      }
+    },
+    {
+      "order": 28,
+      "borough": "Lewisham",
+      "station": "Forest Hill",
+      "coordinates": { "lat": 51.4394, "lng": -0.0533 },
+      "estimated_minutes": 15,
+      "transport": { "mode": "overground", "line": "Overground / Southern", "direction": "Northbound" },
+      "directions": "Overground or Southern from Crystal Palace northbound. Alight at Forest Hill. Quick stop. Southern train may be right behind.",
+      "sign_tip": "Signs on Devonshire Road outside the station.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "From 'Levesham' - the settlement of a man named Leofsa.",
+        "history": "Deptford Royal Dockyard, established by Henry VIII in 1513, was one of the most important naval dockyards in England - ships that fought the Spanish Armada were built and repaired there. The 1957 Lewisham rail crash killed 90 people and led to major safety reforms on British railways.",
+        "trivia": [
+          "The giant fibreglass cat on top of the Catford Centre has been a beloved/bemoaned local landmark since the 1970s.",
+          "The Horniman Museum in Forest Hill was one of London's first free museums. Its overstuffed walrus is legendarily terrible taxidermy.",
+          "Sir Francis Drake was knighted by Elizabeth I aboard the Golden Hinde at Deptford in 1581.",
+          "Lewisham has more Overground stations than any other south London borough."
+        ]
+      }
+    },
+    {
+      "order": 29,
+      "borough": "Southwark",
+      "station": "London Bridge",
+      "coordinates": { "lat": 51.5052, "lng": -0.0864 },
+      "estimated_minutes": 22,
+      "transport": { "mode": "national_rail", "line": "Southern / Thameslink", "direction": "Northbound" },
+      "directions": "Train northbound from Forest Hill to London Bridge. Mid-afternoon - well before the evening rush.",
+      "sign_tip": "Signs on Tooley Street or St Thomas Street. 4 boroughs to go.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "From Old English 'Suthriganaweorc' - the southern defensive work, protecting the southern end of London Bridge.",
+        "history": "Southwark has always been London's rowdy south bank. In Shakespeare's time it was home to theatres (including the Globe), bear-baiting pits, and brothels - all outside City jurisdiction. Borough Market has traded since at least 1014. Southwark Cathedral contains a memorial to Shakespeare.",
+        "trivia": [
+          "Borough Market has a strong claim to being London's oldest food market - over 1,000 years of trading.",
+          "The Clink Prison in Southwark gave the English language the expression 'in the clink'.",
+          "Southwark was historically known as 'the Borough' because it was the only borough south of the Thames for centuries.",
+          "The Shard, at 310 metres, is the tallest building in the UK and stands in Southwark."
+        ]
+      }
+    },
+    {
+      "order": 30,
+      "borough": "Lambeth",
+      "station": "Waterloo",
+      "coordinates": { "lat": 51.5036, "lng": -0.1143 },
+      "estimated_minutes": 18,
+      "transport": { "mode": "national_rail", "line": "Train to Waterloo East, then walk", "direction": "Westbound" },
+      "directions": "Train or Jubilee line from London Bridge to Waterloo East. Walk to Waterloo mainline - 5 minute hike between the two.",
+      "sign_tip": "Lambeth signs on Waterloo Road, The Cut, or near the IMAX roundabout.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "From 'Lambhythe' - a landing place for lambs, or possibly 'loam harbour' referring to the muddy riverbank.",
+        "history": "Lambeth Palace has been the London residence of the Archbishops of Canterbury since around 1200. Charlie Chaplin was born in 1889 and grew up in poverty in the Kennington area. The Lambeth Walk, originally a street market, became a globally famous song and dance in 1937.",
+        "trivia": [
+          "Charlie Chaplin grew up so poor in Lambeth that he and his brother were sent to the workhouse as children.",
+          "The Oval cricket ground has hosted Test cricket since 1880 and was originally a market garden.",
+          "Lambeth Palace Library, founded in 1610, is the oldest public library in England.",
+          "The word 'Lambeth' appears in a charter from 1062, making it one of the oldest recorded place names south of the river."
+        ]
+      }
+    },
+    {
+      "order": 31,
+      "borough": "Westminster",
+      "station": "Embankment",
+      "coordinates": { "lat": 51.5074, "lng": -0.1223 },
+      "estimated_minutes": 12,
+      "transport": { "mode": "tube", "line": "Northern/Bakerloo line", "direction": "Northbound one stop" },
+      "directions": "Northern or Bakerloo line from Waterloo to Embankment. Head above ground briefly. Then back down for Northern line to Tottenham Court Road.",
+      "sign_tip": "City of Westminster signs on Villiers Street.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "'Western monastery' - west of the City of London, referring to the abbey (minster) built on Thorney Island in the marshes.",
+        "history": "Westminster Abbey has hosted every English and British coronation since William the Conqueror in 1066. Parliament has met at Westminster since the 13th century. Buckingham Palace became the official royal residence in 1837 when Queen Victoria moved in.",
+        "trivia": [
+          "Westminster is technically a city within a city - it was granted city status in 1540.",
+          "Big Ben is the name of the bell, not the tower. The tower was renamed Elizabeth Tower in 2012.",
+          "The original Big Ben bell cracked during testing in 1857. The replacement also has a crack - which gives it its distinctive tone.",
+          "Westminster contains more blue heritage plaques than any other London borough."
+        ]
+      }
+    },
+    {
+      "order": 32,
+      "borough": "City of London",
+      "station": "Farringdon (Barbican end)",
+      "coordinates": { "lat": 51.5203, "lng": -0.0890 },
+      "estimated_minutes": 18,
+      "transport": { "mode": "tube", "line": "Elizabeth line", "direction": "Eastbound from Tottenham Court Road" },
+      "directions": "Northern line from Embankment to Tottenham Court Road. Change to Elizabeth line eastbound. Alight at Farringdon, exit via the Barbican/Long Lane end. ALMOST DONE.",
+      "sign_tip": "City of London has distinctive signs with the dragon crest - very different from the other 32. Look on Long Lane or Charterhouse Street.",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "From Roman 'Londinium' - origin debated, possibly Celtic meaning 'the wild place' or 'the place belonging to a man named Londinos'. The 'City' distinction dates from it being the original walled settlement.",
+        "history": "Founded as Londinium by the Romans around 43 AD, the City has been a financial centre for over a thousand years. The Great Fire of 1666 destroyed 13,200 houses and 87 churches within the walls. Today only about 8,500 people live in the Square Mile, but over 500,000 commute in daily.",
+        "trivia": [
+          "The City of London has its own police force (not the Met), its own Lord Mayor, and a governance system that predates Parliament.",
+          "The boundary dragons are technically called 'griffins' by the City, though they look like dragons and everyone calls them dragons.",
+          "The Barbican Estate is the largest example of Brutalist architecture in Europe.",
+          "The City's resident population of around 8,500 is smaller than many villages."
+        ]
+      }
+    },
+    {
+      "order": 33,
+      "borough": "Bexley",
+      "station": "Abbey Wood",
+      "coordinates": { "lat": 51.4910, "lng": 0.1203 },
+      "estimated_minutes": 30,
+      "transport": { "mode": "tube", "line": "Elizabeth line", "direction": "Eastbound to Abbey Wood (NOT Shenfield)" },
+      "directions": "Elizabeth line eastbound from Farringdon - take the ABBEY WOOD branch this time (not Shenfield). Ride to the terminus. The street outside is in Bexley. FINAL BOROUGH. Then short bus or walk home to Greenwich.",
+      "sign_tip": "Signs on Harrow Manorway or Wilton Road. Take your victory photo!",
+      "meal": null,
+      "meal_note": null,
+      "borough_info": {
+        "etymology": "From Old English 'byxe leah' - a clearing where box trees grow.",
+        "history": "Crossness Pumping Station, opened in 1865 as part of Bazalgette's sewerage system, is a masterpiece of Victorian engineering with ornate ironwork that earned it the nickname 'the cathedral on the marshes'. Red House in Bexleyheath, designed by Philip Webb for William Morris in 1859, is considered a foundational building of the Arts and Crafts movement.",
+        "trivia": [
+          "Crossness Pumping Station's original beam engines are the largest surviving rotative beam engines in the world.",
+          "Red House was so revolutionary that it influenced an entire architectural movement - Morris lived there for just five years.",
+          "Danson Park's Georgian mansion was nearly demolished in the 1920s but its painted salon room is now considered one of the finest Georgian interiors in London.",
+          "Abbey Wood takes its name from Lesnes Abbey, a 12th-century monastery whose ruins are still visible in the park above the station."
+        ]
+      }
+    }
+  ]
+}

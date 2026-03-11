@@ -1,0 +1,71 @@
+/*
+ * Main stylesheet for the Borough Challenge app.
+ *
+ * Tailwind CSS v4 uses a CSS-first approach: instead of a tailwind.config.js file,
+ * all configuration (custom colours, fonts, etc.) is done right here in CSS
+ * using the @theme directive.
+ */
+
+/* Import Tailwind's base, components, and utilities layers */
+@import "tailwindcss";
+
+/*
+ * @theme defines custom design tokens that become Tailwind utility classes.
+ * For example, --color-tfl-victoria: #0098D4 creates the classes:
+ *   bg-tfl-victoria, text-tfl-victoria, border-tfl-victoria, etc.
+ */
+@theme {
+  /* === TfL Brand Colours === */
+  /* These are the official Transport for London line colours */
+  --color-tfl-blue: #0019A8;        /* Underground roundel blue */
+  --color-tfl-red: #DC241F;         /* Underground roundel red */
+
+  /* Tube lines */
+  --color-tfl-bakerloo: #B36305;
+  --color-tfl-central: #E32017;
+  --color-tfl-circle: #FFD300;
+  --color-tfl-district: #00782A;
+  --color-tfl-hammersmith: #F3A9BB;
+  --color-tfl-jubilee: #A0A5A9;
+  --color-tfl-metropolitan: #9B0056;
+  --color-tfl-northern: #000000;
+  --color-tfl-piccadilly: #003688;
+  --color-tfl-victoria: #0098D4;
+  --color-tfl-waterloo: #95CDBA;
+
+  /* Other TfL services */
+  --color-tfl-dlr: #00A4A7;
+  --color-tfl-elizabeth: #7156A5;
+  --color-tfl-tramlink: #84B817;
+  --color-tfl-overground: #EE7C0E;
+  --color-tfl-national-rail: #E21836;
+  --color-tfl-bus: #DC241F;
+
+  /* Overground sub-lines (for reference) */
+  --color-tfl-mildmay: #437EC1;
+  --color-tfl-lioness: #F1B41C;
+  --color-tfl-windrush: #EF4D5E;
+  --color-tfl-weaver: #972861;
+  --color-tfl-suffragette: #39B97A;
+  --color-tfl-liberty: #676767;
+}
+
+/*
+ * Dark mode in Tailwind v4 works automatically via prefers-color-scheme.
+ * The dark: variant (e.g. dark:bg-gray-900) activates when the user's OS
+ * is set to dark mode. No extra config needed.
+ *
+ * Below we set base styles for both modes on the <body> element.
+ */
+body {
+  /* Light mode defaults */
+  @apply bg-gray-50 text-gray-900 antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Dark mode body override using Tailwind's @variant */
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-gray-950 text-gray-100;
+  }
+}
