@@ -1,23 +1,19 @@
 /*
- * TransportBadge.jsx — A coloured pill showing the transport mode for a step.
+ * TransportBadge.jsx — A small coloured pill showing the TfL line/mode.
  *
  * REACT CONCEPTS:
  *
- * - Inline styles: Sometimes you need dynamic styles that depend on data.
- *   Tailwind classes are great for static styles, but when the background
- *   colour comes from a variable (which TfL line?), inline styles make sense.
+ * - Inline styles: When the background colour comes from a variable
+ *   (which TfL line?), we use inline styles rather than Tailwind classes.
  *   In React, inline styles are objects: style={{ backgroundColor: '#00A4A7' }}
  *   Note: CSS property names are camelCase (backgroundColor, not background-color).
  *
  * - Object lookup maps: A common pattern to map data values to UI values.
- *   Instead of a giant if/else chain, we use a plain JavaScript object:
- *   const map = { dlr: '🚈', tube: '🚇' }
- *   Then: map[mode] gives us the right emoji.
+ *   Instead of a giant if/else chain, we use a plain JavaScript object.
  */
 
 /*
  * Map transport mode → emoji icon.
- * These appear before the line name in the badge.
  */
 const MODE_EMOJI = {
   start: '🏠',
@@ -31,11 +27,7 @@ const MODE_EMOJI = {
 }
 
 /*
- * Map transport line names → TfL hex colours.
- * The line name comes from route.json's transport.line field.
- * We match against lowercased line names for resilience.
- *
- * When a line isn't found here, we fall back to a mode-based colour.
+ * Map transport line names (lowercased) → TfL hex colours.
  */
 const LINE_COLOURS = {
   'dlr': '#00A4A7',
@@ -63,7 +55,7 @@ const LINE_COLOURS = {
 }
 
 /*
- * Fallback colours by transport mode (when line name isn't in the map above).
+ * Fallback colours by transport mode.
  */
 const MODE_COLOURS = {
   start: '#666666',
@@ -76,9 +68,35 @@ const MODE_COLOURS = {
   national_rail: '#E21836',
 }
 
+/*
+ * Short display names for lines — drops redundant words like "line".
+ * If not in this map, we use the raw line name.
+ */
+const LINE_SHORT_NAMES = {
+  'elizabeth line': 'Elizabeth',
+  'victoria line': 'Victoria',
+  'metropolitan line': 'Metropolitan',
+  'metropolitan/piccadilly line': 'Met / Picc',
+  'piccadilly line': 'Piccadilly',
+  'piccadilly/district line': 'Picc / District',
+  'district line': 'District',
+  'northern line': 'Northern',
+  'northern/bakerloo line': 'Northern / Bakerloo',
+  'bakerloo line': 'Bakerloo',
+  'jubilee line': 'Jubilee',
+  'croydon tramlink': 'Tramlink',
+  'overground (mildmay line)': 'Mildmay',
+  'overground / victoria line': 'Victoria',
+  'overground / southern': 'Overground',
+  'greater anglia': 'Gr. Anglia',
+  'south western railway': 'SWR',
+  'southern': 'Southern',
+  'southern / thameslink': 'Southern',
+  'train to waterloo east, then walk': 'National Rail',
+}
+
 /**
- * Get the background colour for a transport badge.
- * Tries line name first, then falls back to mode colour.
+ * Get the background colour for a line/mode.
  */
 function getBadgeColour(mode, lineName) {
   if (lineName) {
@@ -88,25 +106,35 @@ function getBadgeColour(mode, lineName) {
   return MODE_COLOURS[mode] || '#666666'
 }
 
-export default function TransportBadge({ transport }) {
-  const { mode, line, direction } = transport
+/**
+ * Get a short display name for a line.
+ */
+function getShortName(lineName) {
+  if (!lineName) return null
+  const key = lineName.toLowerCase()
+  return LINE_SHORT_NAMES[key] || lineName
+}
+
+/**
+ * LinePill — A tiny coloured pill showing a TfL line name with emoji.
+ * Used inline next to station names and in the transport direction line.
+ *
+ * Exported so CurrentBorough can use it directly next to the destination name.
+ */
+export function LinePill({ mode, line }) {
   const emoji = MODE_EMOJI[mode] || '📍'
   const bgColour = getBadgeColour(mode, line)
+  const shortName = getShortName(line)
 
-  // For walking steps, show a simpler badge
+  // For walk steps, show a simple walking pill
   if (mode === 'walk') {
     return (
-      <div className="flex items-center gap-2 flex-wrap">
-        <span
-          className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-medium text-white"
-          style={{ backgroundColor: bgColour }}
-        >
-          {emoji} Walk
-        </span>
-        {direction && (
-          <span className="text-sm text-gray-600 dark:text-gray-400">{direction}</span>
-        )}
-      </div>
+      <span
+        className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium text-white whitespace-nowrap"
+        style={{ backgroundColor: bgColour }}
+      >
+        {emoji} Walk
+      </span>
     )
   }
 
@@ -114,7 +142,7 @@ export default function TransportBadge({ transport }) {
   if (mode === 'start') {
     return (
       <span
-        className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-medium text-white"
+        className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium text-white whitespace-nowrap"
         style={{ backgroundColor: bgColour }}
       >
         {emoji} Start
@@ -122,21 +150,38 @@ export default function TransportBadge({ transport }) {
     )
   }
 
-  return (
-    <div className="flex items-center gap-2 flex-wrap">
-      {/*
-        * The badge pill: emoji + line name on a coloured background.
-        * Inline style is used for backgroundColor because it's data-driven.
-        * Tailwind handles everything else (padding, rounded corners, text colour).
-        */}
+  // For bus, show the route number
+  if (mode === 'bus') {
+    return (
       <span
-        className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-medium text-white"
+        className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium text-white whitespace-nowrap"
         style={{ backgroundColor: bgColour }}
       >
-        {emoji} {line}
+        {emoji} Bus {line}
       </span>
+    )
+  }
 
-      {/* Direction text (e.g. "Eastbound to Shenfield") shown beside the pill */}
+  return (
+    <span
+      className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium text-white whitespace-nowrap"
+      style={{ backgroundColor: bgColour }}
+    >
+      {emoji} {shortName}
+    </span>
+  )
+}
+
+/**
+ * TransportBadge — Full transport display: pill + direction text.
+ * This is the default export used when you want the complete badge with direction.
+ */
+export default function TransportBadge({ transport }) {
+  const { mode, line, direction } = transport
+
+  return (
+    <div className="flex items-center gap-2 flex-wrap">
+      <LinePill mode={mode} line={line} />
       {direction && (
         <span className="text-sm text-gray-600 dark:text-gray-400">{direction}</span>
       )}

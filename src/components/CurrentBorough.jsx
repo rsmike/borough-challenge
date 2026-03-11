@@ -14,8 +14,13 @@
  * REACT CONCEPTS:
  *
  * - Component composition: This component uses other components inside it
- *   (TransportBadge, BoroughInfo). This is React's main abstraction —
+ *   (LinePill, BoroughInfo). This is React's main abstraction —
  *   building complex UIs from smaller, reusable pieces.
+ *
+ * - Named imports: { LinePill } imports a specific export from TransportBadge.
+ *   A module can have both a "default" export and named exports.
+ *   import X from './file'      → imports the default export
+ *   import { Y } from './file'  → imports a named export
  *
  * - Callback props: onComplete is a function passed from the parent (App).
  *   When the user taps "Got the photo!", we call onComplete(step.order)
@@ -26,7 +31,7 @@
  *   Only shows the meal section if this step has a meal marker.
  */
 
-import TransportBadge from './TransportBadge'
+import { LinePill } from './TransportBadge'
 import BoroughInfo from './BoroughInfo'
 
 export default function CurrentBorough({ step, onComplete }) {
@@ -40,6 +45,9 @@ export default function CurrentBorough({ step, onComplete }) {
 
   // Meal emoji based on meal type
   const mealEmoji = step.meal === 'breakfast' ? '🍳' : step.meal === 'lunch' ? '🍔' : '🍽️'
+
+  // Shorthand for transport fields
+  const { mode, line, direction, from_station } = step.transport
 
   return (
     /*
@@ -76,8 +84,11 @@ export default function CurrentBorough({ step, onComplete }) {
       {/* === TRANSPORT: How to get there === */}
       <div className="space-y-2">
         {/*
-          * "Go to:" — the destination station, the most important info.
-          * Shown prominently with a small inline maps button.
+          * "Go to:" line — the destination station name (most important info),
+          * followed by a coloured line pill showing which TfL line it's on,
+          * and a small maps button.
+          *
+          * Example: "Go to: Romford [Elizabeth] [Map]"
           */}
         {step.station && (
           <div className="flex items-center gap-2 flex-wrap">
@@ -85,7 +96,15 @@ export default function CurrentBorough({ step, onComplete }) {
               <span className="text-gray-500 dark:text-gray-400 font-normal">Go to:</span>{' '}
               {step.station}
             </h3>
-            {/* Tiny inline maps button next to the station name */}
+            {/*
+              * Show line pill next to station ONLY when there's no "From" line below
+              * (i.e. no from_station). Otherwise the pill already appears in the
+              * "From X [Line]: direction" line and showing it twice is redundant.
+              */}
+            {line && mode !== 'walk' && mode !== 'start' && !from_station && (
+              <LinePill mode={mode} line={line} />
+            )}
+            {/* Tiny maps button */}
             <a
               href={mapsUrl}
               target="_blank"
@@ -99,17 +118,62 @@ export default function CurrentBorough({ step, onComplete }) {
         )}
 
         {/*
-          * "Via:" — shows the boarding station, transport mode, and direction.
-          * Compact two-line layout: "from X" on one line, badge+direction on next.
+          * Compact direction line — combines from_station, line pill, and direction
+          * on a single line. Format:
+          * "From Canary Wharf [Elizabeth]: Eastbound to Shenfield"
+          *
+          * - from_station is emphasised (bold)
+          * - line is a coloured pill
+          * - direction text uses italic for the travel direction
+          *
+          * For walk steps, this section is skipped (walk badge shown instead).
+          * For start steps, just shows the start badge.
           */}
-        <div className="text-sm space-y-1">
-          {step.transport.from_station && (
-            <p className="text-gray-500 dark:text-gray-400">
-              From <span className="font-medium text-gray-700 dark:text-gray-300">{step.transport.from_station}</span>
-            </p>
-          )}
-          <TransportBadge transport={step.transport} />
-        </div>
+        {mode === 'walk' && (
+          <div className="flex items-center gap-2">
+            <LinePill mode={mode} line={line} />
+            {direction && (
+              <span className="text-sm text-gray-600 dark:text-gray-400">{direction}</span>
+            )}
+          </div>
+        )}
+
+        {mode === 'start' && (
+          <LinePill mode={mode} line={line} />
+        )}
+
+        {/*
+          * Compact direction line for non-walk/non-start transport modes.
+          * Format: "From Canary Wharf [Elizabeth]: Eastbound to Shenfield"
+          * All on one flowing line, wrapping naturally at word boundaries.
+          */}
+        {mode !== 'walk' && mode !== 'start' && from_station && (
+          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+            From{' '}
+            <span className="font-semibold text-gray-800 dark:text-gray-200">{from_station}</span>
+            {' '}
+            {/*
+              * LinePill is an inline element (span) so it flows naturally in text.
+              * Using inline-flex on the pill ensures it sits on the text baseline.
+              */}
+            <LinePill mode={mode} line={line} />
+            {direction && (
+              <span className="text-gray-600 dark:text-gray-400">
+                {': '}
+                <em>{direction}</em>
+              </span>
+            )}
+          </p>
+        )}
+
+        {/* Fallback: no from_station but has direction */}
+        {mode !== 'walk' && mode !== 'start' && !from_station && direction && (
+          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+            <LinePill mode={mode} line={line} />
+            {' '}
+            <em>{direction}</em>
+          </p>
+        )}
 
         {/* Detailed directions prose */}
         <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
