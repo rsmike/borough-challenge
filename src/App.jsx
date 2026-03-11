@@ -43,7 +43,8 @@ export default function App() {
   /*
    * STATE: completedSteps
    *
-   * An array of step order numbers that have been completed, e.g. [1, 2, 3].
+   * An array of check-in records: [{ order: 1, checkedAt: 1710000000000 }, ...]
+   * Each record stores which step was completed and the exact timestamp.
    * Initialised lazily from localStorage (the function form of useState
    * runs only once on first render, not on every re-render).
    */
@@ -67,8 +68,9 @@ export default function App() {
    * when completedSteps changes.
    */
   const { completed, current, future, remainingMinutes } = useMemo(() => {
-    // Convert to a Set for O(1) lookups
-    const doneSet = new Set(completedSteps)
+    // Build a Map from order number → checkedAt timestamp for O(1) lookups.
+    // A Map is like an object but with better performance for frequent lookups.
+    const doneMap = new Map(completedSteps.map(s => [s.order, s.checkedAt]))
 
     const completedItems = []
     const futureItems = []
@@ -76,8 +78,9 @@ export default function App() {
 
     // Walk through all steps in order and categorise each one
     for (const step of routeData.steps) {
-      if (doneSet.has(step.order)) {
-        completedItems.push(step)
+      if (doneMap.has(step.order)) {
+        // Attach the check-in time to the step data for display
+        completedItems.push({ ...step, checkedAt: doneMap.get(step.order) })
       } else if (!currentItem) {
         // First non-completed step is the current one
         currentItem = step
@@ -102,6 +105,7 @@ export default function App() {
   /*
    * CALLBACK: Mark a step as completed.
    *
+   * Records the current timestamp (Date.now()) as the check-in time.
    * useCallback memoises this function — it won't be recreated on every render.
    * The function form of setCompletedSteps (prev => ...) ensures we always
    * work with the latest state, avoiding stale closure bugs.
@@ -109,8 +113,8 @@ export default function App() {
   const markCompleted = useCallback((orderNumber) => {
     setCompletedSteps(prev => {
       // Don't add duplicates
-      if (prev.includes(orderNumber)) return prev
-      return [...prev, orderNumber]
+      if (prev.some(s => s.order === orderNumber)) return prev
+      return [...prev, { order: orderNumber, checkedAt: Date.now() }]
     })
   }, [])
 
