@@ -250,11 +250,11 @@
       "estimated_minutes": 31,
       "transport": {
         "mode": "overground",
-        "line": "Overground / Victoria line",
-        "direction": "Northbound",
-        "from_station": "Forest Gate"
+        "line": "Overground (Suffragette line)",
+        "direction": "Westbound towards Gospel Oak",
+        "from_station": "Wanstead Park"
       },
-      "directions": "From Forest Gate, get to Blackhorse Road. Best options: Elizabeth line to Stratford then Overground northbound, or Elizabeth line to Liverpool Street then Victoria line. Check which is faster on the day. CHECK VICTORIA LINE STATUS HERE.",
+      "directions": "Walk from Forest Gate to Wanstead Park station (about 10 min). Take the Overground Suffragette line westbound towards Gospel Oak. Ride to Blackhorse Road.",
       "sign_tip": "Signs on Blackhorse Lane outside the station.",
       "meal": null,
       "meal_note": null,

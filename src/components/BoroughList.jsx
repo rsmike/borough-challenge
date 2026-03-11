@@ -22,7 +22,7 @@ import CompletedItem from './CompletedItem'
 import CurrentBorough from './CurrentBorough'
 import FutureItem from './FutureItem'
 
-export default function BoroughList({ completed, current, future, onComplete, currentRef }) {
+export default function BoroughList({ completed, current, future, onComplete, onUndo, currentRef }) {
   return (
     <div className="space-y-1">
       {/* === COMPLETED BOROUGHS === */}
@@ -30,7 +30,7 @@ export default function BoroughList({ completed, current, future, onComplete, cu
       {completed.length > 0 && (
         <div className="space-y-0.5 mb-4">
           {completed.map(step => (
-            <CompletedItem key={step.order} step={step} />
+            <CompletedItem key={step.order} step={step} onUndo={onUndo} />
           ))}
         </div>
       )}

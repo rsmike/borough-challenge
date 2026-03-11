@@ -17,7 +17,7 @@ import { useState } from 'react'
 import { LinePill } from './TransportBadge'
 import BoroughInfo from './BoroughInfo'
 
-export default function CompletedItem({ step }) {
+export default function CompletedItem({ step, onUndo }) {
   // State to track whether this item's details are visible
   const [expanded, setExpanded] = useState(false)
 
@@ -152,6 +152,14 @@ export default function CompletedItem({ step }) {
 
           {/* Borough info (collapsible within the expanded section) */}
           <BoroughInfo info={step.borough_info} />
+
+          {/* Undo button — marks this borough as not completed */}
+          <button
+            onClick={() => onUndo(step.order)}
+            className="text-xs text-red-400 dark:text-red-500 hover:text-red-600 dark:hover:text-red-400 transition-colors"
+          >
+            Undo check-in
+          </button>
         </div>
       )}
     </div>

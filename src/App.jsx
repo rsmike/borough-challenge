@@ -119,6 +119,16 @@ export default function App() {
   }, [])
 
   /*
+   * CALLBACK: Undo a completed step (mark it as not done).
+   *
+   * Filters out the step with the given order number from completedSteps.
+   * Uses the function form of setState to avoid stale closure bugs.
+   */
+  const undoCompleted = useCallback((orderNumber) => {
+    setCompletedSteps(prev => prev.filter(s => s.order !== orderNumber))
+  }, [])
+
+  /*
    * CALLBACK: Reset all progress (hidden feature).
    * Called from the Header component when user triple-taps the title.
    */
@@ -169,6 +179,7 @@ export default function App() {
           current={current}
           future={future}
           onComplete={markCompleted}
+          onUndo={undoCompleted}
           currentRef={currentRef}
         />
 
