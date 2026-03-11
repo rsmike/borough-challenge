@@ -2,7 +2,7 @@
 
 ## What is this?
 A single-page React PWA to track progress visiting all 33 London boroughs in one day.
-Data lives in `route.json` (root) and `src/data/route.json` (build copy).
+Data lives in `src/data/route.json`.
 
 ## Tech Stack
 - **Vite + React 19** with JSX
@@ -17,9 +17,8 @@ Data lives in `route.json` (root) and `src/data/route.json` (build copy).
 - `npm run lint` — ESLint check
 
 ## Key Architecture
-- `route.json` is the single source of truth for all route data
-- If you edit `route.json` at the root, copy it to `src/data/route.json` too
-- State: `completedSteps` (array of order numbers) persisted to localStorage
+- `src/data/route.json` is the single source of truth for all route data
+- State: `completedSteps` (array of `{order, checkedAt}` objects) persisted to localStorage
 - Current borough = first step not in completedSteps
 - Hidden reset: triple-tap the header title
 

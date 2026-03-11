@@ -131,10 +131,10 @@
       "transport": {
         "mode": "tube",
         "line": "Elizabeth line",
-        "direction": "Eastbound to Shenfield",
+        "direction": "Westbound, change at Whitechapel, eastbound to Shenfield",
         "from_station": "Canary Wharf"
       },
-      "directions": "Enter Canary Wharf Elizabeth line station. Take eastbound train towards Shenfield (NOT Abbey Wood - different branch). Ride to Romford.",
+      "directions": "Enter Canary Wharf Elizabeth line station. Take westbound train, change at Whitechapel, take eastbound train towards Shenfield. Ride to Romford.",
       "sign_tip": "Signs on South Street right outside the station.",
       "meal": null,
       "meal_note": null,

@@ -23,8 +23,5 @@ dist/
 .vscode/
 *.code-workspace
 
-# Backup files
-route.json.bak
-
 # Claude local settings
 .claude/settings.local.json
